@@ -10,6 +10,7 @@
     <Resources>
         <File name="choice_sentences" src="behavior_1/Aldebaran/choice_sentences.xml" />
         <File name="swiftswords_ext" src="behavior_1/swiftswords_ext.mp3" />
+        <File name="air_guitar" src="behavior_1/air_guitar.crg" />
     </Resources>
     <Topics>
         <Topic name="ExampleDialog_enu" src="behavior_1/ExampleDialog/ExampleDialog_enu.top" topicName="ExampleDialog" language="en_US" />
