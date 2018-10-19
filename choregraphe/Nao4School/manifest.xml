@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="nao4school-2b5d8b">
+<package uuid="nao4school">
  <names>
   <name lang="en_US">Nao4School</name>
  </names>
@@ -11,6 +11,10 @@
  </descriptionLanguages>
  <contents>
   <behaviorContent path="main">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="when_you_grow_up">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
