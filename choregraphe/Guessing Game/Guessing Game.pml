@@ -5,7 +5,9 @@
         <BehaviorDescription name="behavior" src="behavior_1" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
-    <Resources />
+    <Resources>
+        <File name="do_clapping_nosound" src="do_clapping_nosound.crg" />
+    </Resources>
     <Topics />
     <IgnoredPaths />
 </Package>

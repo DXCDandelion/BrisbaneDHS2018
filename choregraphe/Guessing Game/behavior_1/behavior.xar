@@ -870,7 +870,7 @@ Can u guess it?]]>
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Stand Up" id="8" localization="8" tooltip="the robot tries to stand up from any position for a number of tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." x="97" y="146">
+                        <Box name="Stand Up" id="8" localization="8" tooltip="the robot tries to stand up from any position for a number of tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." x="193" y="20">
                             <bitmap>media/images/box/movement/stand.png</bitmap>
                             <script language="4">
                                 <content>
