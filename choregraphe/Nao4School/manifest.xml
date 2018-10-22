@@ -16,27 +16,25 @@
   </behaviorContent>
   <behaviorContent path="when_you_grow_up">
    <nature>interactive</nature>
-   <triggerSentences/>
-   <loadingResponses/>
-   <autonomous/>
    <permissions/>
   </behaviorContent>
-  <behaviorContent path="air_guitar">
+  <behaviorContent path="dances/air_guitar">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="dances/macarena">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="dances/the_robot_2">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="yoga">
    <nature>interactive</nature>
    <triggerSentences/>
    <loadingResponses/>
    <autonomous/>
-   <permissions/>
-  </behaviorContent>
-  <behaviorContent path="macarena">
-   <nature>interactive</nature>
-   <triggerSentences/>
-   <loadingResponses/>
-   <autonomous/>
-   <permissions/>
-  </behaviorContent>
-  <behaviorContent path="the_robot_2">
-   <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
  </contents>
