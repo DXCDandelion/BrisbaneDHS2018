@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="yogalogic-e2d305">
+<package uuid="safetybriefing-a814ee">
  <names>
-  <name lang="en_US">yogalogic</name>
+  <name lang="en_US">Safety briefing</name>
  </names>
  <supportedLanguages>
   <language>en_US</language>
