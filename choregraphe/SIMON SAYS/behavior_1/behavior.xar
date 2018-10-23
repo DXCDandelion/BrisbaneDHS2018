@@ -14,7 +14,7 @@
         <Timeline enable="0">
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
-                    <Diagram>
+                    <Diagram scale="200">
                         <Box name="Speech Reco." id="1" localization="8" tooltip="Recognize a word from a list of words set in the box parameters.&#x0A;&#x0A;V1.1.0&#x0A;" x="227" y="20">
                             <bitmap>media/images/box/interaction/ear.png</bitmap>
                             <script language="4">
@@ -7898,7 +7898,8 @@ class MyClass(GeneratedClass):
                         <Link inputowner="14" indexofinput="2" outputowner="29" indexofoutput="4" />
                         <Link inputowner="1" indexofinput="3" outputowner="1" indexofoutput="5" />
                         <Link inputowner="3" indexofinput="3" outputowner="3" indexofoutput="5" />
-                        <Link inputowner="1" indexofinput="2" outputowner="14" indexofoutput="4" />
+                        <Link inputowner="3" indexofinput="2" outputowner="14" indexofoutput="4" />
+                        <Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="2" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
