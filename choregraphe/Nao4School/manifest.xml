@@ -40,16 +40,10 @@
   </behaviorContent>
   <behaviorContent path="icebreaker/Base_Behaviour">
    <nature>interactive</nature>
-   <triggerSentences/>
-   <loadingResponses/>
-   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="icebreaker/Lose_Behaviour">
    <nature>interactive</nature>
-   <triggerSentences/>
-   <loadingResponses/>
-   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="icebreaker/Win_Behaviour">

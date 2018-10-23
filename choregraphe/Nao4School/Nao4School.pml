@@ -12,8 +12,11 @@
         <BehaviorDescription name="behavior" src="icebreaker/Base_Behaviour" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="icebreaker/Lose_Behaviour" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="icebreaker/Win_Behaviour" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="safety" xar="behavior.xar" />
     </BehaviorDescriptions>
-    <Dialogs />
+    <Dialogs>
+        <Dialog name="ExampleDialog" src="safety/ExampleDialog/ExampleDialog.dlg" />
+    </Dialogs>
     <Resources>
         <File name="choice_sentences" src="when_you_grow_up/Aldebaran/choice_sentences.xml" />
         <File name="Smoke on the Water" src="dances/air_guitar/Smoke on the Water.mp3" />
@@ -21,6 +24,8 @@
         <File name="choice_sentences" src="yoga/Aldebaran/choice_sentences.xml" />
         <File name="choice_sentences" src="icebreaker/Base_Behaviour/Aldebaran/choice_sentences.xml" />
     </Resources>
-    <Topics />
+    <Topics>
+        <Topic name="ExampleDialog_enu" src="safety/ExampleDialog/ExampleDialog_enu.top" topicName="ExampleDialog" language="en_US" />
+    </Topics>
     <IgnoredPaths />
 </Package>
