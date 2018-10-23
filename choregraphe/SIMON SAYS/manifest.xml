@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="nao_whenyougrowup_project-75a258">
+<package uuid="simonsays-9f0ae2">
  <names>
-  <name lang="en_US">NAO_WhenYouGrowUp_Project</name>
+  <name lang="en_US">SIMON SAYS</name>
  </names>
  <supportedLanguages>
   <language>en_US</language>
@@ -10,7 +10,7 @@
   <language>en_US</language>
  </descriptionLanguages>
  <contents>
-  <behaviorContent path="when_you_grow_up">
+  <behaviorContent path="behavior_1">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
