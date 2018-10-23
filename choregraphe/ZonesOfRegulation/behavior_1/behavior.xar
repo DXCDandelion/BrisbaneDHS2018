@@ -9192,113 +9192,23 @@ class MyClass(GeneratedClass):
                                                     <Choice value="contextual" />
                                                 </Parameter>
                                             </Box>
-                                            <Box name="Localized Text" id="5" localization="8" tooltip="Send on the output the text associated with the robot&apos;s current voice language.&#x0A;You can display and edit the text associated with any language by&#x0A;selecting the language in the combobox.&#x0A;&#x0A;!!Warning!! The text sent on the output is NOT the displayed one but the one&#x0A;associated with the robot&apos;s current voice language." plugin="localizationbox_plugin" x="114" y="68">
+                                            <Box name="Localized Text" id="5" localization="8" tooltip="Send on the output the text associated with the robot&apos;s current voice language.&#x0A;You can display and edit the text associated with any language by&#x0A;selecting the language in the combobox.&#x0A;&#x0A;!!Warning!! The text sent on the output is NOT the displayed one but the one&#x0A;associated with the robot&apos;s current voice language." plugin="textedit_plugin" x="114" y="68">
                                                 <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
                                                 <script language="4">
                                                     <content>
                                                         <![CDATA[# /!\ Generated content. Do not edit!
 class MyClass(GeneratedClass):
 	def __init__(self):
-		try: # disable autoBind
-			GeneratedClass.__init__(self, False)
-		except TypeError: # if NAOqi < 1.14
-			GeneratedClass.__init__( self )
-
-		self.tts = ALProxy("ALTextToSpeech")
-		self.sentences = {
-			"Arabic" : "  ",
-			"Czech" : " ^start(animations/Stand/Gestures/Hey_1) Ahoj ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Danish" : " ^start(animations/Stand/Gestures/Hey_1) Hej ^wait(animations/Stand/Gestures/Hey_1) ",
-			"German" : " ^start(animations/Stand/Gestures/Hey_1) Hallo ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Greek" : "  ",
-			"English" : " ^start(animations/Stand/Gestures/Hey_1) Goodbye! ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Spanish" : " ^start(animations/Stand/Gestures/Hey_1) Hola ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Finnish" : " ^start(animations/Stand/Gestures/Hey_1) Hei ^wait(animations/Stand/Gestures/Hey_1) ",
-			"French" : " ^start(animations/Stand/Gestures/Hey_1) Bonjour ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Italian" : " ^start(animations/Stand/Gestures/Hey_1) Ciao ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Japanese" : " ^start(animations/Stand/Gestures/Hey_1) こんにちは ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Korean" : " ^start(animations/Stand/Gestures/Hey_1) 안녕하세요 ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Dutch" : " ^start(animations/Stand/Gestures/Hey_1) Hallo ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Norwegian" : "  ",
-			"Polish" : " ^start(animations/Stand/Gestures/Hey_1) Cześć ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Brazilian" : " ^start(animations/Stand/Gestures/Hey_1) Olá ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Portuguese" : " ^start(animations/Stand/Gestures/Hey_1) Olá ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Russian" : " ^start(animations/Stand/Gestures/Hey_1) Привет ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Swedish" : " ^start(animations/Stand/Gestures/Hey_1) Hallå ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Turkish" : " ^start(animations/Stand/Gestures/Hey_1) Merhaba ^wait(animations/Stand/Gestures/Hey_1) ",
-			"Chinese" : "  "
-		}
+		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		sDefaultLang = self.tts.getLanguage()
-		self.onStopped(self.sentences[sDefaultLang])]]>
+		self.onStopped("^start(animations/Stand/Gestures/Hey_1) Goodbye! ^wait(animations/Stand/Gestures/Hey_1)")]]>
 </content>
                                                 </script>
                                                 <pluginContent>
-                                                    <arabic>
-                                                        <![CDATA[]]>
-</arabic>
-                                                    <czech>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Ahoj ^wait(animations/Stand/Gestures/Hey_1)]]>
-</czech>
-                                                    <danish>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Hej ^wait(animations/Stand/Gestures/Hey_1)]]>
-</danish>
-                                                    <german>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Hallo ^wait(animations/Stand/Gestures/Hey_1)]]>
-</german>
-                                                    <greek>
-                                                        <![CDATA[]]>
-</greek>
-                                                    <english>
+                                                    <text>
                                                         <![CDATA[^start(animations/Stand/Gestures/Hey_1) Goodbye! ^wait(animations/Stand/Gestures/Hey_1)]]>
-</english>
-                                                    <spanish>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Hola ^wait(animations/Stand/Gestures/Hey_1)]]>
-</spanish>
-                                                    <finnish>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Hei ^wait(animations/Stand/Gestures/Hey_1)]]>
-</finnish>
-                                                    <french>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Bonjour ^wait(animations/Stand/Gestures/Hey_1)]]>
-</french>
-                                                    <italian>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Ciao ^wait(animations/Stand/Gestures/Hey_1)]]>
-</italian>
-                                                    <japanese>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) こんにちは ^wait(animations/Stand/Gestures/Hey_1)]]>
-</japanese>
-                                                    <korean>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) 안녕하세요 ^wait(animations/Stand/Gestures/Hey_1)]]>
-</korean>
-                                                    <dutch>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Hallo ^wait(animations/Stand/Gestures/Hey_1)]]>
-</dutch>
-                                                    <norwegian>
-                                                        <![CDATA[]]>
-</norwegian>
-                                                    <polish>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Cześć ^wait(animations/Stand/Gestures/Hey_1)]]>
-</polish>
-                                                    <brazilian>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Olá ^wait(animations/Stand/Gestures/Hey_1)]]>
-</brazilian>
-                                                    <portuguese>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Olá ^wait(animations/Stand/Gestures/Hey_1)]]>
-</portuguese>
-                                                    <russian>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Привет ^wait(animations/Stand/Gestures/Hey_1)]]>
-</russian>
-                                                    <swedish>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Hallå ^wait(animations/Stand/Gestures/Hey_1)]]>
-</swedish>
-                                                    <turkish>
-                                                        <![CDATA[^start(animations/Stand/Gestures/Hey_1) Merhaba ^wait(animations/Stand/Gestures/Hey_1)]]>
-</turkish>
-                                                    <chinese>
-                                                        <![CDATA[]]>
-</chinese>
-                                                    <language>6</language>
+</text>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
