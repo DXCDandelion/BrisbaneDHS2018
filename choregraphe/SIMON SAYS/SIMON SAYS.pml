@@ -10,6 +10,7 @@
     <Dialogs />
     <Resources>
         <File name="choice_sentences" src='&quot;simon says&quot;/Aldebaran/choice_sentences.xml' />
+        <File name="choice_sentences" src="without/Aldebaran/choice_sentences.xml" />
     </Resources>
     <Topics />
     <IgnoredPaths />

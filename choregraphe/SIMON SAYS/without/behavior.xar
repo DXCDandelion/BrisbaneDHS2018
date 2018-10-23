@@ -15,7 +15,7 @@
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
                     <Diagram>
-                        <Box name="Delay" id="14" localization="8" tooltip="Wait a moment before triggering the output. &#x0A;Can be stopped anytime. &#x0A;Multiple inputs will trigger multiple outputs." x="392" y="149">
+                        <Box name="Delay" id="14" localization="8" tooltip="Wait a moment before triggering the output. &#x0A;Can be stopped anytime. &#x0A;Multiple inputs will trigger multiple outputs." x="732" y="47">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -63,7 +63,7 @@
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="3" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently delaying at least one signal and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Speech Reco." id="3" localization="8" tooltip="Recognize a word from a list of words set in the box parameters.&#x0A;&#x0A;V1.1.0&#x0A;" x="178" y="270">
+                        <Box name="Speech Reco." id="3" localization="8" tooltip="Recognize a word from a list of words set in the box parameters.&#x0A;&#x0A;V1.1.0&#x0A;" x="87" y="352">
                             <bitmap>media/images/box/interaction/ear.png</bitmap>
                             <script language="4">
                                 <content>
@@ -148,7 +148,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Enable word spotting" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="If this option is not activated the robot will only understand exact expressions. If it is, he will spot the exact expressions even in the middle of a sentence.&#x0A;&#x0A;!!Warning!! This option is only available with the speech recognition module using Nuance (ie in Atom version of the robot)." id="10" />
                             <Resource name="Speech recognition" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Switch Case" id="5" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="322" y="275">
+                        <Box name="Switch Case" id="5" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="193" y="41">
                             <bitmap>media/images/box/interaction/choice.png</bitmap>
                             <script language="4">
                                 <content>
@@ -162,27 +162,27 @@ class MyClass(GeneratedClass):
 
 	def onInput_onStart(self, p):
 		p = self.typeConversion(p)
-		if(p == self.typeConversion("touch head")):
+		if(p == self.typeConversion(1)):
 			self.output_1(p)
-		elif(p == self.typeConversion("touch hand")):
+		elif(p == self.typeConversion(2)):
 			self.output_2(p)
-		elif(p == self.typeConversion("touch chest")):
+		elif(p == self.typeConversion(3)):
 			self.output_3(p)
-		elif(p == self.typeConversion("raise both arms")):
+		elif(p == self.typeConversion(4)):
 			self.output_4(p)
-		elif(p == self.typeConversion("raise one arm")):
+		elif(p == self.typeConversion(5)):
 			self.output_5(p)
-		elif(p == self.typeConversion("touch knee")):
+		elif(p == self.typeConversion(6)):
 			self.output_6(p)
-		elif(p == self.typeConversion("hold one arm forward")):
+		elif(p == self.typeConversion(7)):
 			self.output_7(p)
-		elif(p == self.typeConversion("hold both arms forward")):
+		elif(p == self.typeConversion(8)):
 			self.output_8(p)
-		elif(p == self.typeConversion("hold one arm out")):
+		elif(p == self.typeConversion(9)):
 			self.output_9(p)
-		elif(p == self.typeConversion("hold both arms out")):
+		elif(p == self.typeConversion(10)):
 			self.output_10(p)
-		elif(p == self.typeConversion("dab")):
+		elif(p == self.typeConversion(11)):
 			self.output_11(p)
 		else:
 			self.onDefault()
@@ -200,17 +200,17 @@ class MyClass(GeneratedClass):
                             </script>
                             <pluginContent>
                                 <keywords>
-                                    <keyword>&quot;touch head&quot;</keyword>
-                                    <keyword>&quot;touch hand&quot;</keyword>
-                                    <keyword>&quot;touch chest&quot;</keyword>
-                                    <keyword>&quot;raise both arms&quot;</keyword>
-                                    <keyword>&quot;raise one arm&quot;</keyword>
-                                    <keyword>&quot;touch knee&quot;</keyword>
-                                    <keyword>&quot;hold one arm forward&quot;</keyword>
-                                    <keyword>&quot;hold both arms forward&quot;</keyword>
-                                    <keyword>&quot;hold one arm out&quot;</keyword>
-                                    <keyword>&quot;hold both arms out&quot;</keyword>
-                                    <keyword>&quot;dab&quot;</keyword>
+                                    <keyword>1</keyword>
+                                    <keyword>2</keyword>
+                                    <keyword>3</keyword>
+                                    <keyword>4</keyword>
+                                    <keyword>5</keyword>
+                                    <keyword>6</keyword>
+                                    <keyword>7</keyword>
+                                    <keyword>8</keyword>
+                                    <keyword>9</keyword>
+                                    <keyword>10</keyword>
+                                    <keyword>11</keyword>
                                     <keyword></keyword>
                                 </keywords>
                             </pluginContent>
@@ -3629,7 +3629,139 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Link inputowner="5" indexofinput="2" outputowner="3" indexofoutput="5" />
+                        <Box name="Random Int." id="1" localization="8" tooltip="Generate a random integer between a min number and a max number set as&#x0A;parameters.&#x0A;Note that the min and max numbers are included in the range of possible values." x="75" y="47">
+                            <bitmap>media/images/box/box-script.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[import random
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        # attributes needed in shuffle mode
+        self.nMax = 1
+        self.nMin = 0
+        self.nIndex = self.nMax - self.nMin
+        self.aShuffled = []
+
+    def onUnload(self):
+         #puts code for box cleanup here
+        pass
+
+    def onInput_onStart(self):
+        nMax = self.getParameter("Max value")
+        nMin = self.getParameter("Min value")
+        if( nMin > nMax ):
+            temp = nMin
+            nMin = nMax
+            nMax = temp
+        # if shuffle
+        if( self.getParameter("Shuffle") ):
+            self.nIndex += 1
+            if( self.nIndex > self.nMax - self.nMin or nMax != self.nMax or nMin != self.nMin ):
+                self.nMax = nMax
+                self.nMin = nMin
+                self.nIndex = 0
+                self.aShuffled = []
+                for i in range( nMin, nMax + 1 ):
+                    self.aShuffled.insert( random.randint(0, len(self.aShuffled)), i )
+            self.output_RandomValue( self.aShuffled[self.nIndex] )
+        # if not shuffle
+        else:
+            self.nIndex = self.nMax - self.nMin
+            self.output_RandomValue( random.randint( nMin, nMax ) )]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="Generate a random integer." id="2" />
+                            <Output name="output_RandomValue" type="2" type_size="1" nature="2" inner="0" tooltip="The random value obtained." id="3" />
+                            <Parameter name="Min value" inherits_from_parent="0" content_type="1" value="1" default_value="0" min="0" max="1000" tooltip="The minimum value you can get." id="4" />
+                            <Parameter name="Max value" inherits_from_parent="0" content_type="1" value="11" default_value="10" min="0" max="1000" tooltip="The maximum number you can get." id="5" />
+                            <Parameter name="Shuffle" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="When this option is selected the box will give all the numbers between min and&#x0A;max before giving the same number twice." id="6" />
+                        </Box>
+                        <Box name="Switch Case (1)" id="2" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="198" y="324">
+                            <bitmap>media/images/box/interaction/choice.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		try: # disable autoBind
+		  GeneratedClass.__init__(self, False)
+		except TypeError: # if NAOqi < 1.14
+		  GeneratedClass.__init__( self )
+
+	def onInput_onStart(self, p):
+		p = self.typeConversion(p)
+		if(p == self.typeConversion("touch head")):
+			self.output_1(p)
+		elif(p == self.typeConversion("touch hand")):
+			self.output_2(p)
+		elif(p == self.typeConversion("touch chest")):
+			self.output_3(p)
+		elif(p == self.typeConversion("raise both arms")):
+			self.output_4(p)
+		elif(p == self.typeConversion("raise one arm")):
+			self.output_5(p)
+		elif(p == self.typeConversion("touch knee")):
+			self.output_6(p)
+		elif(p == self.typeConversion("hold one arm forward")):
+			self.output_7(p)
+		elif(p == self.typeConversion("hold both arms forward")):
+			self.output_8(p)
+		elif(p == self.typeConversion("hold one arm out")):
+			self.output_9(p)
+		elif(p == self.typeConversion("hold both arms out")):
+			self.output_10(p)
+		elif(p == self.typeConversion("dab")):
+			self.output_11(p)
+		else:
+			self.onDefault()
+
+	def typeConversion(self, p):
+		try:
+			p = float(p)
+			pint = int(p)
+			if( p == pint ):
+				p = pint
+		except:
+			p = str(p)
+		return p]]>
+</content>
+                            </script>
+                            <pluginContent>
+                                <keywords>
+                                    <keyword>&quot;touch head&quot;</keyword>
+                                    <keyword>&quot;touch hand&quot;</keyword>
+                                    <keyword>&quot;touch chest&quot;</keyword>
+                                    <keyword>&quot;raise both arms&quot;</keyword>
+                                    <keyword>&quot;raise one arm&quot;</keyword>
+                                    <keyword>&quot;touch knee&quot;</keyword>
+                                    <keyword>&quot;hold one arm forward&quot;</keyword>
+                                    <keyword>&quot;hold both arms forward&quot;</keyword>
+                                    <keyword>&quot;hold one arm out&quot;</keyword>
+                                    <keyword>&quot;hold both arms out&quot;</keyword>
+                                    <keyword>&quot;dab&quot;</keyword>
+                                    <keyword></keyword>
+                                </keywords>
+                            </pluginContent>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="0" type_size="1" nature="1" inner="0" tooltip="Value to test." id="2" />
+                            <Output name="onDefault" type="1" type_size="1" nature="2" inner="0" tooltip="If the input value does not match any value set on the box." id="3" />
+                            <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
+                            <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
+                            <Output name="output_3" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="6" />
+                            <Output name="output_4" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="7" />
+                            <Output name="output_5" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="8" />
+                            <Output name="output_6" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="9" />
+                            <Output name="output_7" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="10" />
+                            <Output name="output_8" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="11" />
+                            <Output name="output_9" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="12" />
+                            <Output name="output_10" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="13" />
+                            <Output name="output_11" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="14" />
+                        </Box>
                         <Link inputowner="16" indexofinput="2" outputowner="5" indexofoutput="4" />
                         <Link inputowner="17" indexofinput="2" outputowner="5" indexofoutput="5" />
                         <Link inputowner="18" indexofinput="2" outputowner="5" indexofoutput="6" />
@@ -3650,11 +3782,13 @@ class MyClass(GeneratedClass):
                         <Link inputowner="14" indexofinput="2" outputowner="22" indexofoutput="4" />
                         <Link inputowner="14" indexofinput="2" outputowner="24" indexofoutput="4" />
                         <Link inputowner="14" indexofinput="2" outputowner="25" indexofoutput="4" />
-                        <Link inputowner="3" indexofinput="3" outputowner="3" indexofoutput="5" />
-                        <Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="2" />
-                        <Link inputowner="0" indexofinput="4" outputowner="14" indexofoutput="4" />
                         <Link inputowner="29" indexofinput="2" outputowner="5" indexofoutput="14" />
                         <Link inputowner="14" indexofinput="2" outputowner="29" indexofoutput="4" />
+                        <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Link inputowner="5" indexofinput="2" outputowner="1" indexofoutput="3" />
+                        <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="5" />
+                        <Link inputowner="3" indexofinput="3" outputowner="3" indexofoutput="6" />
+                        <Link inputowner="0" indexofinput="4" outputowner="14" indexofoutput="4" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
