@@ -8,6 +8,7 @@
         <BehaviorDescription name="behavior" src="dances/macarena" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="dances/the_robot_2" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="yoga" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="zonesofregulation" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>

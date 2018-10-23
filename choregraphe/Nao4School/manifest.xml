@@ -32,9 +32,10 @@
   </behaviorContent>
   <behaviorContent path="yoga">
    <nature>interactive</nature>
-   <triggerSentences/>
-   <loadingResponses/>
-   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="zonesofregulation">
+   <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
  </contents>
