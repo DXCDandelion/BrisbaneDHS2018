@@ -9,6 +9,9 @@
         <BehaviorDescription name="behavior" src="dances/the_robot_2" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="yoga" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="zonesofregulation" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="icebreaker/Base_Behaviour" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="icebreaker/Lose_Behaviour" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="icebreaker/Win_Behaviour" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>
@@ -16,6 +19,7 @@
         <File name="Smoke on the Water" src="dances/air_guitar/Smoke on the Water.mp3" />
         <File name="choice_sentences" src="dances/macarena/Aldebaran/choice_sentences.xml" />
         <File name="choice_sentences" src="yoga/Aldebaran/choice_sentences.xml" />
+        <File name="choice_sentences" src="icebreaker/Base_Behaviour/Aldebaran/choice_sentences.xml" />
     </Resources>
     <Topics />
     <IgnoredPaths />
