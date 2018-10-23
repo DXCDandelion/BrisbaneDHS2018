@@ -94,7 +94,7 @@ class MyClass(GeneratedClass):
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                             <Output name="wordRecognized" type="3" type_size="1" nature="2" inner="0" tooltip="Word recognized with a confidence higher than the threshold set in the box parameters." id="5" />
                             <Output name="onNothing" type="1" type_size="1" nature="2" inner="0" tooltip="Nothing has been understood." id="6" />
-                            <Parameter name="Word list" inherits_from_parent="0" content_type="3" value="scissors;sun;floor;cough;sneeze;fire;intruder;stay safe;uprising;here;play;talk;tell" default_value="yes;no" custom_choice="0" tooltip="Try to recognize a word from a list of words set in the box parameters." id="7" />
+                            <Parameter name="Word list" inherits_from_parent="0" content_type="3" value="scissors;sun;floor;cough;sneeze;fire;intruder;stay safe;here;play;talk;tell" default_value="yes;no" custom_choice="0" tooltip="Try to recognize a word from a list of words set in the box parameters." id="7" />
                             <Parameter name="Confidence threshold (%)" inherits_from_parent="0" content_type="1" value="30" default_value="30" min="0" max="100" tooltip="If the confidence associated with the word recognized is below this threshold, the robot will consider that it is not recognized." id="8" />
                             <Parameter name="Visual expression" inherits_from_parent="0" content_type="0" value="1" default_value="1" tooltip="Use the LEDs to show feedbacks from the robot during the recognition.&#x0A;&#x0A;For example:&#x0A;- Eyes leds get blue and turn when the speech recognition is launched.&#x0A;- They get yellow when the robot hears someone talking and analyses what it heard.&#x0A;- They flash in green when the robot understood and flash in red otherwise." id="9" />
                             <Parameter name="Enable word spotting" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="If this option is not activated the robot will only understand exact expressions. If it is, he will spot the exact expressions even in the middle of a sentence.&#x0A;&#x0A;!!Warning!! This option is only available with the speech recognition module using Nuance (ie in Atom version of the robot)." id="10" />
@@ -1559,7 +1559,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Intruder" id="9" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="582" y="112">
+                        <Box name="Intruder" id="9" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="578" y="120">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2077,7 +2077,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="1" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently delaying at least one signal and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Here" id="16" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="689" y="111">
+                        <Box name="Here" id="16" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="692" y="113">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2165,7 +2165,7 @@ class MyClass(GeneratedClass):
                                                 <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
                                                 <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
                                             </Box>
-                                            <Box name="toSay" id="1" localization="8" tooltip="This Box just transmit the text you entered when its Input is stimulated." plugin="textedit_plugin" x="86" y="66">
+                                            <Box name="toSay" id="1" localization="8" tooltip="This Box just transmit the text you entered when its Input is stimulated." plugin="textedit_plugin" x="157" y="19">
                                                 <script language="4">
                                                     <content>
                                                         <![CDATA[# /!\ Generated content. Do not edit!
@@ -2342,7 +2342,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Play" id="17" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="802" y="112">
+                        <Box name="Play" id="17" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="798" y="122">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2619,7 +2619,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Talk/Tell" id="18" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="913" y="114">
+                        <Box name="Talk/Tell" id="18" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="900" y="112">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -3865,8 +3865,6 @@ class MyClass(GeneratedClass):
                         <Link inputowner="13" indexofinput="2" outputowner="15" indexofoutput="4" />
                         <Link inputowner="1" indexofinput="2" outputowner="14" indexofoutput="4" />
                         <Link inputowner="1" indexofinput="2" outputowner="13" indexofoutput="4" />
-                        <Link inputowner="16" indexofinput="2" outputowner="2" indexofoutput="13" />
-                        <Link inputowner="17" indexofinput="2" outputowner="2" indexofoutput="14" />
                         <Link inputowner="14" indexofinput="2" outputowner="16" indexofoutput="4" />
                         <Link inputowner="14" indexofinput="2" outputowner="17" indexofoutput="4" />
                         <Link inputowner="18" indexofinput="2" outputowner="2" indexofoutput="15" />
@@ -3882,6 +3880,9 @@ class MyClass(GeneratedClass):
                         <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
                         <Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="2" />
                         <Link inputowner="0" indexofinput="4" outputowner="20" indexofoutput="4" />
+                        <Link inputowner="16" indexofinput="2" outputowner="2" indexofoutput="12" />
+                        <Link inputowner="17" indexofinput="2" outputowner="2" indexofoutput="13" />
+                        <Link inputowner="18" indexofinput="2" outputowner="2" indexofoutput="14" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
