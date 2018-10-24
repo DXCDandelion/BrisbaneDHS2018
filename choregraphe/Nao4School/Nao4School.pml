@@ -14,6 +14,7 @@
         <BehaviorDescription name="behavior" src="icebreaker/Win_Behaviour" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="safety" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="emotion" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="animalguessinggame/behavior_1" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="ExampleDialog" src="safety/ExampleDialog/ExampleDialog.dlg" />
@@ -25,6 +26,15 @@
         <File name="choice_sentences" src="yoga/Aldebaran/choice_sentences.xml" />
         <File name="choice_sentences" src="icebreaker/Base_Behaviour/Aldebaran/choice_sentences.xml" />
         <File name="choice_sentences" src="emotion/Aldebaran/choice_sentences.xml" />
+        <File name="" src="animalguessinggame/.metadata" />
+        <File name="Cat_Meow_2-Cat_Stevens-2034822903" src="animalguessinggame/Cat_Meow_2-Cat_Stevens-2034822903.wav" />
+        <File name="Chicken-SoundBible.com-744739895" src="animalguessinggame/Chicken-SoundBible.com-744739895.wav" />
+        <File name="Cow_Moo-Mike_Koenig-42670858" src="animalguessinggame/Cow_Moo-Mike_Koenig-42670858.wav" />
+        <File name="Dog Woof-SoundBible.com-457935112" src="animalguessinggame/Dog Woof-SoundBible.com-457935112.wav" />
+        <File name="Horse Neigh-SoundBible.com-1126369713" src="animalguessinggame/Horse Neigh-SoundBible.com-1126369713.wav" />
+        <File name="Lion Roar-SoundBible.com-718441804" src="animalguessinggame/Lion Roar-SoundBible.com-718441804.wav" />
+        <File name="animalguessinggamelogic" src="animalguessinggame/animalguessinggamelogic.pml" />
+        <File name="manifest" src="animalguessinggame/manifest.xml" />
     </Resources>
     <Topics>
         <Topic name="ExampleDialog_enu" src="safety/ExampleDialog/ExampleDialog_enu.top" topicName="ExampleDialog" language="en_US" />
