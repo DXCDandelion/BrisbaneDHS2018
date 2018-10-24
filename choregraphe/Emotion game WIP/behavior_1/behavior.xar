@@ -14,7 +14,7 @@
         <Timeline enable="0">
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
-                    <Diagram>
+                    <Diagram scale="50">
                         <Box name="Say" id="1" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="109" y="126">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
@@ -311,9 +311,9 @@ class MyClass(GeneratedClass):
                             <Input name="onInit" type="1" type_size="1" nature="1" inner="0" tooltip="When a signal is received on this input, the counter is reinitialized to its Initial&#x0A;value." id="3" />
                             <Output name="currentValue" type="2" type_size="1" nature="2" inner="0" tooltip="Stimulated for each interaction with the counter current value." id="4" />
                             <Output name="onReinitialized" type="1" type_size="1" nature="2" inner="0" tooltip="Stimulated when the loop is over or if the counter has been reinitialized." id="5" />
-                            <Parameter name="Initial value" inherits_from_parent="0" content_type="1" value="0" default_value="0" min="0" max="500" tooltip="The initial value of the counter (for the first iteration)." id="6" />
+                            <Parameter name="Initial value" inherits_from_parent="0" content_type="1" value="1" default_value="0" min="0" max="500" tooltip="The initial value of the counter (for the first iteration)." id="6" />
                             <Parameter name="Step value" inherits_from_parent="0" content_type="1" value="1" default_value="1" min="1" max="500" tooltip="The counter value will be incremented or decremented with this value." id="7" />
-                            <Parameter name="Final value" inherits_from_parent="0" content_type="1" value="6" default_value="5" min="0" max="500" tooltip="It is the maximum (if increasing) or the minimum (if decreasing) value of the&#x0A;counter (thus for the last iteration).&#x0A;&#x0A;After this value, if the onStart input is called, the onReinitialized output will be&#x0A;stimulated and the counter will be reinitialized to its Initial value." id="8" />
+                            <Parameter name="Final value" inherits_from_parent="0" content_type="1" value="5" default_value="5" min="0" max="500" tooltip="It is the maximum (if increasing) or the minimum (if decreasing) value of the&#x0A;counter (thus for the last iteration).&#x0A;&#x0A;After this value, if the onStart input is called, the onReinitialized output will be&#x0A;stimulated and the counter will be reinitialized to its Initial value." id="8" />
                         </Box>
                         <Box name="Switch Case" id="3" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="453" y="226">
                             <bitmap>media/images/box/interaction/choice.png</bitmap>
