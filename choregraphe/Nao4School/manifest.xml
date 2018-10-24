@@ -58,6 +58,10 @@
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
+  <behaviorContent path="animalguessinggame/behavior_1">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
   <dialogContent typeVersion="1.0" topicName="ExampleDialog">
    <topic path="safety/ExampleDialog/ExampleDialog_enu.top" language="en_US"/>
   </dialogContent>
