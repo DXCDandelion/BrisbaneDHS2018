@@ -15,6 +15,7 @@
         <BehaviorDescription name="behavior" src="safety" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="emotion" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="animalguessinggame/behavior_1" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="timegame" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="ExampleDialog" src="safety/ExampleDialog/ExampleDialog.dlg" />
