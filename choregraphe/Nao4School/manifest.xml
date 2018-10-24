@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="simonsays-9f0ae2">
+<package uuid="nao4school">
  <names>
-  <name lang="en_US">SIMON SAYS</name>
+  <name lang="en_US">Nao4School</name>
  </names>
  <supportedLanguages>
   <language>en_US</language>
@@ -10,19 +10,31 @@
   <language>en_US</language>
  </descriptionLanguages>
  <contents>
-  <behaviorContent path="&quot;simon says&quot;">
+  <behaviorContent path="main">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <behaviorContent path="without">
+  <behaviorContent path="when_you_grow_up">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <behaviorContent path="didn't say">
+  <behaviorContent path="dances/air_guitar">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <behaviorContent path="game over">
+  <behaviorContent path="dances/macarena">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="dances/the_robot_2">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="yoga">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="zonesofregulation">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
