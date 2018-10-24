@@ -3629,7 +3629,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Random Int." id="3" localization="8" tooltip="Generate a random integer between a min number and a max number set as&#x0A;parameters.&#x0A;Note that the min and max numbers are included in the range of possible values." x="144" y="23">
+                        <Box name="Random Int." id="3" localization="8" tooltip="Generate a random integer between a min number and a max number set as&#x0A;parameters.&#x0A;Note that the min and max numbers are included in the range of possible values." x="139" y="21">
                             <bitmap>media/images/box/box-script.png</bitmap>
                             <script language="4">
                                 <content>
