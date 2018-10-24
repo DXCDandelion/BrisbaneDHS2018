@@ -16,6 +16,10 @@
         <BehaviorDescription name="behavior" src="emotion" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="animalguessinggame/behavior_1" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="timegame" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="simon_says/_simon says_" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="simon_says/didnt say" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="simon_says/game over" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="simon_says/without" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="ExampleDialog" src="safety/ExampleDialog/ExampleDialog.dlg" />
@@ -36,6 +40,9 @@
         <File name="Lion Roar-SoundBible.com-718441804" src="animalguessinggame/Lion Roar-SoundBible.com-718441804.wav" />
         <File name="animalguessinggamelogic" src="animalguessinggame/animalguessinggamelogic.pml" />
         <File name="manifest" src="animalguessinggame/manifest.xml" />
+        <File name="" src="simon_says/.metadata" />
+        <File name="choice_sentences" src="simon_says/_simon says_/Aldebaran/choice_sentences.xml" />
+        <File name="choice_sentences" src="simon_says/without/Aldebaran/choice_sentences.xml" />
     </Resources>
     <Topics>
         <Topic name="ExampleDialog_enu" src="safety/ExampleDialog/ExampleDialog_enu.top" topicName="ExampleDialog" language="en_US" />
