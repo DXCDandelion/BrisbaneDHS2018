@@ -13,6 +13,7 @@
         <BehaviorDescription name="behavior" src="icebreaker/Lose_Behaviour" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="icebreaker/Win_Behaviour" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="safety" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="emotion" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="ExampleDialog" src="safety/ExampleDialog/ExampleDialog.dlg" />
@@ -23,6 +24,7 @@
         <File name="choice_sentences" src="dances/macarena/Aldebaran/choice_sentences.xml" />
         <File name="choice_sentences" src="yoga/Aldebaran/choice_sentences.xml" />
         <File name="choice_sentences" src="icebreaker/Base_Behaviour/Aldebaran/choice_sentences.xml" />
+        <File name="choice_sentences" src="emotion/Aldebaran/choice_sentences.xml" />
     </Resources>
     <Topics>
         <Topic name="ExampleDialog_enu" src="safety/ExampleDialog/ExampleDialog_enu.top" topicName="ExampleDialog" language="en_US" />
