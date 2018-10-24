@@ -53,7 +53,7 @@
                             <Parameter name="Max" inherits_from_parent="0" content_type="1" value="100" default_value="0" min="0" max="100" tooltip="" id="6" />
                             <Parameter name="Min" inherits_from_parent="0" content_type="1" value="0" default_value="0" min="0" max="100" tooltip="" id="7" />
                         </Box>
-                        <Box name="Wait For Signals" id="1" localization="8" tooltip="Wait for both inputs to be stimulated before stimulating its output." x="559" y="369">
+                        <Box name="Wait For Signals" id="1" localization="8" tooltip="Wait for both inputs to be stimulated before stimulating its output." x="527" y="393">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -113,15 +113,14 @@
 
     def onInput_input(self, p):
         self.numb = p
-        self.Distance(p)
+        self.logger.info(str(p))
         pass
 
     def onInput_guess(self, p):
 
+        self.speach(p)
 
 
-        if self.numb == p:
-                 self.Correct()
         persent = abs(self.numb - p)
         #self.Distance(str(p) + " is " + str(persent) + " away from " + str(self.numb))
 
@@ -131,7 +130,10 @@
 
 
 
-        if persent < 5:
+        if self.numb == p:
+            self.Correct()
+            pass
+        elif persent < 5:
             if self.previousGuess == None:
                 self.Distance("Scolding")
             elif abs(self.numb - self.previousGuess) > persent:
@@ -140,31 +142,37 @@
                 self.Distance("Colder")
             elif abs(self.numb - self.previousGuess) == persent and not self.previousGuess == p:
                  self.Distance("almost")
-            elif self.previousGuess == p:
-                self.Distance("You Just Said that")
-
-
+            self.previousGuess = p
         elif persent < 10 and persent > 5:
-           self.Distance("really hot")
+            self.Distance("really hot")
+            self.previousGuess = None
         elif persent < 15 and persent > 10:
-           self.Distance("Hot")
+            self.Distance("Hot")
+            self.previousGuess = None
         elif persent < 20 and persent > 15:
-           self.Distance("warm")
+            self.Distance("warm")
+            self.previousGuess = None
         elif persent < 30 and persent > 20:
-           self.Distance("Tauntaun")
+            self.Distance("Tauntaun")
+            self.previousGuess = None
         elif persent < 40 and persent > 30:
-           self.Distance("room temp")
+            self.Distance("room temp")
+            self.previousGuess = None
         elif persent < 50 and persent > 40:
-           self.Distance("Cool")
+            self.Distance("Cool")
+            self.previousGuess = None
         elif persent < 65 and persent > 50:
-           self.Distance("Cold")
+            self.Distance("Cold")
+            self.previousGuess = None
         elif persent < 80 and persent > 65:
-           self.Distance("Icy")
+            self.Distance("Icy")
+            self.previousGuess = None
         elif persent < 100 and persent > 80:
            self.Distance("frozen")
         elif persent > 100:
-           self.Distance("DryFrozen")
-        self.previousGuess = p
+            self.previousGuess = None
+            self.Distance("DryFrozen")
+
 
         pass]]>
 </content>
@@ -174,8 +182,9 @@
                             <Input name="guess" type="2" type_size="1" nature="1" inner="0" tooltip="" id="3" />
                             <Output name="Distance" type="3" type_size="1" nature="2" inner="0" tooltip="" id="4" />
                             <Output name="Correct" type="1" type_size="1" nature="2" inner="0" tooltip="" id="5" />
+                            <Output name="speach" type="3" type_size="1" nature="2" inner="0" tooltip="" id="6" />
                         </Box>
-                        <Box name="Say" id="3" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1029" y="402">
+                        <Box name="Say" id="3" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1159" y="456">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -369,7 +378,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>9</language>
+                                                    <language>10</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -547,7 +556,7 @@ class MyClass(GeneratedClass):
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
 			"Greek" : "  ",
-			"English" : " HEL LOw\n\n\nAN   D  welcome \n\n\nTO \n\n\n\nNUMBER     GUESSING   G AME ",
+			"English" : " HEL LOw\n\n\nAN   D  welcome \n\n\nTO \n\n\n\nNUMBER     GUESSING   Geym ",
 			"Spanish" : " Hola ",
 			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
@@ -597,7 +606,7 @@ TO
 
 
 
-NUMBER     GUESSING   G AME]]>
+NUMBER     GUESSING   Geym]]>
 </english>
                                                     <spanish>
                                                         <![CDATA[Hola]]>
@@ -644,7 +653,7 @@ NUMBER     GUESSING   G AME]]>
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>7</language>
+                                                    <language>5</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -766,7 +775,7 @@ class MyClass(GeneratedClass):
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
 			"Greek" : "  ",
-			"English" : " IM THinking of a number between 1 and 100\n\n\nCan u guess it? ",
+			"English" : " IM Hinking of a number between 1 and 100\n\n\nCan u guess it? ",
 			"Spanish" : " Hola ",
 			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
@@ -806,7 +815,7 @@ class MyClass(GeneratedClass):
                                                         <![CDATA[]]>
 </greek>
                                                     <english>
-                                                        <![CDATA[IM THinking of a number between 1 and 100
+                                                        <![CDATA[IM Hinking of a number between 1 and 100
 
 
 Can u guess it?]]>
@@ -856,7 +865,7 @@ Can u guess it?]]>
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>7</language>
+                                                    <language>5</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -871,7 +880,7 @@ Can u guess it?]]>
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Stand Up" id="8" localization="8" tooltip="the robot tries to stand up from any position for a number of tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." x="91" y="146">
+                        <Box name="Stand Up" id="8" localization="8" tooltip="the robot tries to stand up from any position for a number of tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." x="307" y="316">
                             <bitmap>media/images/box/movement/stand.png</bitmap>
                             <script language="4">
                                 <content>
@@ -883,7 +892,7 @@ Can u guess it?]]>
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
                             <Output name="success" type="1" type_size="1" nature="1" inner="0" tooltip="Stimulated when the robot succeed in standing up." id="4" />
                             <Output name="failure" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when the robot failed to stand up after n tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." id="5" />
-                            <Parameter name="Maximum of tries" inherits_from_parent="0" content_type="1" value="3" default_value="3" min="0" max="10" tooltip="The maximum number of fails of stand up before stimulating the failure output." id="6" />
+                            <Parameter name="Maximum of tries" inherits_from_parent="0" content_type="1" value="10" default_value="3" min="0" max="10" tooltip="The maximum number of fails of stand up before stimulating the failure output." id="6" />
                             <Timeline enable="0">
                                 <BehaviorLayer name="StandUpBehavior">
                                     <BehaviorKeyframe name="DetectRobotPose" index="1">
@@ -950,7 +959,7 @@ Can u guess it?]]>
                             </Timeline>
                             <Resource name="All motors" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Speech Reco." id="7" localization="8" tooltip="Recognize a word from a list of words set in the box parameters.&#x0A;&#x0A;V1.1.0&#x0A;" x="328" y="955">
+                        <Box name="Speech Reco." id="7" localization="8" tooltip="Recognize a word from a list of words set in the box parameters.&#x0A;&#x0A;V1.1.0&#x0A;" x="330" y="1339">
                             <bitmap>media/images/box/interaction/ear.png</bitmap>
                             <script language="4">
                                 <content>
@@ -1033,12 +1042,12 @@ class MyClass(GeneratedClass):
                             <Output name="onNothing" type="1" type_size="1" nature="2" inner="0" tooltip="Nothing has been understood." id="6" />
                             <Output name="Onnotcloseenough" type="1" type_size="1" nature="2" inner="0" tooltip="" id="7" />
                             <Parameter name="Word list" inherits_from_parent="0" content_type="3" value="yes;no" default_value="yes;no" custom_choice="0" tooltip="Try to recognize a word from a list of words set in the box parameters." id="8" />
-                            <Parameter name="Confidence threshold (%)" inherits_from_parent="0" content_type="1" value="50" default_value="30" min="0" max="100" tooltip="If the confidence associated with the word recognized is below this threshold, the robot will consider that it is not recognized." id="9" />
+                            <Parameter name="Confidence threshold (%)" inherits_from_parent="0" content_type="1" value="30" default_value="30" min="0" max="100" tooltip="If the confidence associated with the word recognized is below this threshold, the robot will consider that it is not recognized." id="9" />
                             <Parameter name="Visual expression" inherits_from_parent="0" content_type="0" value="1" default_value="1" tooltip="Use the LEDs to show feedbacks from the robot during the recognition.&#x0A;&#x0A;For example:&#x0A;- Eyes leds get blue and turn when the speech recognition is launched.&#x0A;- They get yellow when the robot hears someone talking and analyses what it heard.&#x0A;- They flash in green when the robot understood and flash in red otherwise." id="10" />
                             <Parameter name="Enable word spotting" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="If this option is not activated the robot will only understand exact expressions. If it is, he will spot the exact expressions even in the middle of a sentence.&#x0A;&#x0A;!!Warning!! This option is only available with the speech recognition module using Nuance (ie in Atom version of the robot)." id="11" />
                             <Resource name="Speech recognition" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Say (3)" id="10" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="714" y="1176">
+                        <Box name="Say (3)" id="10" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="754" y="1104">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -1232,7 +1241,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>8</language>
+                                                    <language>5</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1247,7 +1256,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Delay" id="14" localization="8" tooltip="Wait a moment before triggering the output. &#x0A;Can be stopped anytime. &#x0A;Multiple inputs will trigger multiple outputs." x="881" y="583">
+                        <Box name="Delay" id="14" localization="8" tooltip="Wait a moment before triggering the output. &#x0A;Can be stopped anytime. &#x0A;Multiple inputs will trigger multiple outputs." x="787" y="527">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -1295,7 +1304,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="1" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently delaying at least one signal and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Pos: Clapping" id="11" localization="8" tooltip="no sound" x="1025" y="906">
+                        <Box name="Pos: Clapping" id="11" localization="8" tooltip="no sound" x="1199" y="856">
                             <bitmap>media/images/box/movement/move.png</bitmap>
                             <script language="4">
                                 <content>
@@ -1682,7 +1691,7 @@ class MyClass(GeneratedClass):
                                 </ActuatorList>
                             </Timeline>
                         </Box>
-                        <Box name="END POSE" id="19" localization="8" tooltip="Add to end of all sequences 1_10&#x0A;" x="1316" y="944">
+                        <Box name="END POSE" id="19" localization="8" tooltip="Add to end of all sequences 1_10&#x0A;" x="1362" y="946">
                             <bitmap>media/images/box/movement/move.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2113,7 +2122,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Audio player" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Wait For Signals (1)" id="15" localization="8" tooltip="Wait for both inputs to be stimulated before stimulating its output." x="1149" y="1066">
+                        <Box name="Wait For Signals (1)" id="15" localization="8" tooltip="Wait for both inputs to be stimulated before stimulating its output." x="1237" y="1166">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2343,7 +2352,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>7</language>
+                                                    <language>8</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2443,7 +2452,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Enable word spotting" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="If this option is not activated the robot will only understand exact expressions. If it is, he will spot the exact expressions even in the middle of a sentence.&#x0A;&#x0A;!!Warning!! This option is only available with the speech recognition module using Nuance (ie in Atom version of the robot)." id="10" />
                             <Resource name="Speech recognition" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Switch Case" id="18" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="1329" y="551">
+                        <Box name="Switch Case" id="18" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="1453" y="619">
                             <bitmap>media/images/box/interaction/choice.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2488,7 +2497,7 @@ class MyClass(GeneratedClass):
                             <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
                             <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
                         </Box>
-                        <Box name="Delay (1)" id="20" localization="8" tooltip="Wait a moment before triggering the output. &#x0A;Can be stopped anytime. &#x0A;Multiple inputs will trigger multiple outputs." x="0" y="457">
+                        <Box name="Delay (1)" id="20" localization="8" tooltip="Wait a moment before triggering the output. &#x0A;Can be stopped anytime. &#x0A;Multiple inputs will trigger multiple outputs." x="76" y="443">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2536,7 +2545,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="1" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently delaying at least one signal and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Say (5)" id="21" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="66" y="18">
+                        <Box name="Say (5)" id="21" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="98" y="34">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2742,7 +2751,7 @@ Press My Head to continue:]]>
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>7</language>
+                                                    <language>8</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2900,7 +2909,7 @@ Press My Head to continue:]]>
                             </Timeline>
                             <Resource name="Head-sequence" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Play Sound (2)" id="23" localization="8" tooltip="Play a sound file. Select the file in parameters. The format of the file can be wav or ogg (on virtual robot) and also mp3 (on a real robot).&#x0A;&#x0A;Note: There can be some delay to play ogg or mp3 (on a robot) files. We advise you to use wav if&#x0A;you want a fast play of the file." x="834" y="152">
+                        <Box name="Play Sound (2)" id="23" localization="8" tooltip="Play a sound file. Select the file in parameters. The format of the file can be wav or ogg (on virtual robot) and also mp3 (on a real robot).&#x0A;&#x0A;Note: There can be some delay to play ogg or mp3 (on a robot) files. We advise you to use wav if&#x0A;you want a fast play of the file." x="1060" y="64">
                             <bitmap>media/images/box/interaction/play_music.png</bitmap>
                             <script language="4">
                                 <content>
@@ -3030,7 +3039,6 @@ class MyClass(GeneratedClass):
                         <Link inputowner="1" indexofinput="2" outputowner="2" indexofoutput="5" />
                         <Link inputowner="7" indexofinput="3" outputowner="7" indexofoutput="5" />
                         <Link inputowner="7" indexofinput="2" outputowner="1" indexofoutput="4" />
-                        <Link inputowner="14" indexofinput="2" outputowner="5" indexofoutput="4" />
                         <Link inputowner="11" indexofinput="2" outputowner="3" indexofoutput="4" />
                         <Link inputowner="13" indexofinput="2" outputowner="3" indexofoutput="4" />
                         <Link inputowner="11" indexofinput="2" outputowner="11" indexofoutput="4" />
@@ -3045,7 +3053,6 @@ class MyClass(GeneratedClass):
                         <Link inputowner="6" indexofinput="2" outputowner="20" indexofoutput="4" />
                         <Link inputowner="20" indexofinput="2" outputowner="18" indexofoutput="4" />
                         <Link inputowner="22" indexofinput="2" outputowner="21" indexofoutput="4" />
-                        <Link inputowner="21" indexofinput="2" outputowner="0" indexofoutput="2" />
                         <Link inputowner="20" indexofinput="2" outputowner="22" indexofoutput="8" />
                         <Link inputowner="20" indexofinput="2" outputowner="22" indexofoutput="9" />
                         <Link inputowner="20" indexofinput="2" outputowner="22" indexofoutput="10" />
@@ -3053,14 +3060,18 @@ class MyClass(GeneratedClass):
                         <Link inputowner="11" indexofinput="3" outputowner="15" indexofoutput="4" />
                         <Link inputowner="17" indexofinput="3" outputowner="17" indexofoutput="5" />
                         <Link inputowner="7" indexofinput="2" outputowner="14" indexofoutput="4" />
-                        <Link inputowner="10" indexofinput="3" outputowner="3" indexofoutput="4" />
-                        <Link inputowner="14" indexofinput="3" outputowner="3" indexofoutput="4" />
-                        <Link inputowner="7" indexofinput="3" outputowner="3" indexofoutput="4" />
                         <Link inputowner="10" indexofinput="2" outputowner="7" indexofoutput="6" />
-                        <Link inputowner="7" indexofinput="2" outputowner="7" indexofoutput="7" />
-                        <Link inputowner="7" indexofinput="2" outputowner="7" indexofoutput="6" />
                         <Link inputowner="23" indexofinput="2" outputowner="4" indexofoutput="4" />
                         <Link inputowner="5" indexofinput="2" outputowner="4" indexofoutput="4" />
+                        <Link inputowner="22" indexofinput="3" outputowner="20" indexofoutput="4" />
+                        <Link inputowner="20" indexofinput="3" outputowner="20" indexofoutput="4" />
+                        <Link inputowner="20" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Link inputowner="7" indexofinput="2" outputowner="7" indexofoutput="7" />
+                        <Link inputowner="7" indexofinput="2" outputowner="10" indexofoutput="4" />
+                        <Link inputowner="5" indexofinput="2" outputowner="4" indexofoutput="6" />
+                        <Link inputowner="7" indexofinput="3" outputowner="4" indexofoutput="5" />
+                        <Link inputowner="7" indexofinput="2" outputowner="23" indexofoutput="4" />
+                        <Link inputowner="11" indexofinput="3" outputowner="13" indexofoutput="4" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
