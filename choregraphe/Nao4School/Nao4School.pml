@@ -20,6 +20,7 @@
         <BehaviorDescription name="behavior" src="simon_says/didnt say" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="simon_says/game over" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="simon_says/without" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="Manners" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="ExampleDialog" src="safety/ExampleDialog/ExampleDialog.dlg" />
