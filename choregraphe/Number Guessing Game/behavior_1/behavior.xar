@@ -53,7 +53,7 @@
                             <Parameter name="Max" inherits_from_parent="0" content_type="1" value="10" default_value="0" min="0" max="100" tooltip="" id="6" />
                             <Parameter name="Min" inherits_from_parent="0" content_type="1" value="0" default_value="0" min="0" max="100" tooltip="" id="7" />
                         </Box>
-                        <Box name="Wait For Signals" id="1" localization="8" tooltip="Wait for both inputs to be stimulated before stimulating its output." x="593" y="359">
+                        <Box name="Wait For Signals" id="1" localization="8" tooltip="Wait for both inputs to be stimulated before stimulating its output." x="543" y="397">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -89,7 +89,7 @@
                             <Input name="signal2" type="1" type_size="1" nature="1" inner="0" tooltip="Second signal to wait." id="3" />
                             <Output name="signalsReceived" type="1" type_size="1" nature="2" inner="0" tooltip="Signal sent when both inputs have been stimulated." id="4" />
                         </Box>
-                        <Box name="Number checker" id="4" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="725" y="307">
+                        <Box name="Number checker" id="4" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="797" y="333">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
@@ -121,7 +121,7 @@
         self.speach("your guess is " + str(p))
 
 
-        persent = abs(self.numb - p)/10
+        persent = abs(self.numb - p)
         #self.Distance(str(p) + " is " + str(persent) + " away from " + str(self.numb))
 
 
@@ -132,44 +132,45 @@
 
         if self.numb == p:
             self.Correct()
-            pass
         elif persent < 5:
             if self.previousGuess == None:
                 self.Distance("Scolding")
-            elif abs(self.numb - self.previousGuess)/10 > persent:
+            elif abs(self.numb - self.previousGuess) > persent:
+                self.logger.info(abs(self.numb - self.previousGuess) > persent)
                 self.Distance("Hoter")
-            elif abs(self.numb - self.previousGuess)/10 < persent:
+            elif abs(self.numb - self.previousGuess) < persent:
+                self.logger.info(abs(self.numb - self.previousGuess) < persent)
                 self.Distance("Colder")
             elif abs(self.numb - self.previousGuess) == persent and not self.previousGuess == p:
                  self.Distance("almost")
             self.previousGuess = p
-        elif persent < 10 and persent > 5:
+        elif persent < 1 and persent > 0.5:
             self.Distance("really hot")
             self.previousGuess = None
-        elif persent < 15 and persent > 10:
+        elif persent < 1.5 and persent > 1:
             self.Distance("Hot")
             self.previousGuess = None
-        elif persent < 20 and persent > 15:
+        elif persent < 2 and persent > 1.5:
             self.Distance("warm")
             self.previousGuess = None
-        elif persent < 30 and persent > 20:
+        elif persent < 3 and persent > 2:
             self.Distance("Tauntaun")
             self.previousGuess = None
-        elif persent < 40 and persent > 30:
+        elif persent < 4 and persent > 3:
             self.Distance("room temp")
             self.previousGuess = None
-        elif persent < 50 and persent > 40:
+        elif persent < 5 and persent > 4:
             self.Distance("Cool")
             self.previousGuess = None
-        elif persent < 65 and persent > 50:
+        elif persent < 6.5 and persent > 5:
             self.Distance("Cold")
             self.previousGuess = None
-        elif persent < 80 and persent > 65:
+        elif persent < 8 and persent > 6.5:
             self.Distance("Icy")
             self.previousGuess = None
-        elif persent < 100 and persent > 80:
+        elif persent < 10 and persent > 8:
            self.Distance("frozen")
-        elif persent > 100:
+        elif persent > 10:
             self.previousGuess = None
             self.Distance("DryFrozen")
 
@@ -378,7 +379,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>14</language>
+                                                    <language>16</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -393,7 +394,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Say Text" id="5" localization="8" tooltip="Say the text received on its input." x="1061" y="215">
+                        <Box name="Say Text" id="5" localization="8" tooltip="Say the text received on its input." x="1071" y="267">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -653,7 +654,7 @@ NUMBER     GUESSING   Geym]]>
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>9</language>
+                                                    <language>11</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -865,7 +866,7 @@ Can u guess it?]]>
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>5</language>
+                                                    <language>7</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -880,7 +881,7 @@ Can u guess it?]]>
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Stand Up" id="8" localization="8" tooltip="the robot tries to stand up from any position for a number of tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." x="307" y="316">
+                        <Box name="Stand Up" id="8" localization="8" tooltip="the robot tries to stand up from any position for a number of tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." x="255" y="268">
                             <bitmap>media/images/box/movement/stand.png</bitmap>
                             <script language="4">
                                 <content>
@@ -1241,7 +1242,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>9</language>
+                                                    <language>11</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2352,7 +2353,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>12</language>
+                                                    <language>14</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2497,7 +2498,7 @@ class MyClass(GeneratedClass):
                             <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
                             <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
                         </Box>
-                        <Box name="Delay (1)" id="20" localization="8" tooltip="Wait a moment before triggering the output. &#x0A;Can be stopped anytime. &#x0A;Multiple inputs will trigger multiple outputs." x="76" y="443">
+                        <Box name="Delay (1)" id="20" localization="8" tooltip="Wait a moment before triggering the output. &#x0A;Can be stopped anytime. &#x0A;Multiple inputs will trigger multiple outputs." x="56" y="429">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2545,7 +2546,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="1" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently delaying at least one signal and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Say (5)" id="21" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="98" y="34">
+                        <Box name="Say (5)" id="21" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="106" y="66">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2758,7 +2759,7 @@ Press My Head to continue:]]>
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>5</language>
+                                                    <language>7</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2773,7 +2774,7 @@ Press My Head to continue:]]>
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Tactile Head" id="22" localization="8" tooltip="Detect touch on head tactile sensor." x="237" y="0">
+                        <Box name="Tactile Head" id="22" localization="8" tooltip="Detect touch on head tactile sensor." x="397" y="0">
                             <bitmap>media/images/box/sensors/tactileHead.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2916,7 +2917,7 @@ Press My Head to continue:]]>
                             </Timeline>
                             <Resource name="Head-sequence" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Play Sound (2)" id="23" localization="8" tooltip="Play a sound file. Select the file in parameters. The format of the file can be wav or ogg (on virtual robot) and also mp3 (on a real robot).&#x0A;&#x0A;Note: There can be some delay to play ogg or mp3 (on a robot) files. We advise you to use wav if&#x0A;you want a fast play of the file." x="1060" y="64">
+                        <Box name="Play Sound (2)" id="23" localization="8" tooltip="Play a sound file. Select the file in parameters. The format of the file can be wav or ogg (on virtual robot) and also mp3 (on a real robot).&#x0A;&#x0A;Note: There can be some delay to play ogg or mp3 (on a robot) files. We advise you to use wav if&#x0A;you want a fast play of the file." x="1016" y="74">
                             <bitmap>media/images/box/interaction/play_music.png</bitmap>
                             <script language="4">
                                 <content>
