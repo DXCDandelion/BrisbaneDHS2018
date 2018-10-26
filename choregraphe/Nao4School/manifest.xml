@@ -82,6 +82,17 @@
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
+  <behaviorContent path="numberguessinggame/behavior_1">
+   <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="storytime">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
   <dialogContent typeVersion="1.0" topicName="ExampleDialog">
    <topic path="safety/ExampleDialog/ExampleDialog_enu.top" language="en_US"/>
   </dialogContent>
