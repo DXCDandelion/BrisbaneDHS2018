@@ -7,6 +7,7 @@
     <Dialogs />
     <Resources>
         <File name="choice_sentences" src="behavior_1/Aldebaran/choice_sentences.xml" />
+        <File name="Lion Roar-SoundBible.com-718441804" src="Lion Roar-SoundBible.com-718441804.wav" />
     </Resources>
     <Topics />
     <IgnoredPaths>
