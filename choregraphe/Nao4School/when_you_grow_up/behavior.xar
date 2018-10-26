@@ -15,7 +15,7 @@
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
                     <Diagram>
-                        <Box name="Astronaut_Say" id="1" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1053" y="368">
+                        <Box name="Astronaut_Say" id="1" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1144" y="288">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -122,7 +122,7 @@ class MyClass(GeneratedClass):
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
 			"Greek" : "  ",
-			"English" : " Be sure to tell me what space is like! ",
+			"English" : " Do you want to go to space? You need to be smart and good at science and math, and strong and fit! Then you can live for several weeks in space! And be sure to tell me what space is like! ",
 			"Spanish" : " Hola ",
 			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
@@ -162,7 +162,7 @@ class MyClass(GeneratedClass):
                                                         <![CDATA[]]>
 </greek>
                                                     <english>
-                                                        <![CDATA[Be sure to tell me what space is like!]]>
+                                                        <![CDATA[Do you want to go to space? You need to be smart and good at science and math, and strong and fit! Then you can live for several weeks in space! And be sure to tell me what space is like!]]>
 </english>
                                                     <spanish>
                                                         <![CDATA[Hola]]>
@@ -209,7 +209,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>9</language>
+                                                    <language>5</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -224,7 +224,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Firefighter_Say" id="3" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1055" y="468">
+                        <Box name="Firefighter_Say" id="3" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1158" y="440">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -331,7 +331,7 @@ class MyClass(GeneratedClass):
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
 			"Greek" : "  ",
-			"English" : " That sounds heated! ",
+			"English" : " You want to help save people? Then you need to be strong and brave, and think on the go! ",
 			"Spanish" : " Hola ",
 			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
@@ -371,7 +371,7 @@ class MyClass(GeneratedClass):
                                                         <![CDATA[]]>
 </greek>
                                                     <english>
-                                                        <![CDATA[That sounds heated!]]>
+                                                        <![CDATA[You want to help save people? Then you need to be strong and brave, and think on the go!]]>
 </english>
                                                     <spanish>
                                                         <![CDATA[Hola]]>
@@ -418,7 +418,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>9</language>
+                                                    <language>5</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -433,7 +433,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Police_Say" id="4" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1055" y="573">
+                        <Box name="Police_Say" id="4" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1145" y="593">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -540,7 +540,7 @@ class MyClass(GeneratedClass):
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
 			"Greek" : "  ",
-			"English" : " Catch all those bad people! ",
+			"English" : " You want to be in the police? You need to be tough and smart, and able to catch the bad guys and keep everyone safe! ",
 			"Spanish" : " Hola ",
 			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
@@ -580,7 +580,7 @@ class MyClass(GeneratedClass):
                                                         <![CDATA[]]>
 </greek>
                                                     <english>
-                                                        <![CDATA[Catch all those bad people!]]>
+                                                        <![CDATA[You want to be in the police? You need to be tough and smart, and able to catch the bad guys and keep everyone safe!]]>
 </english>
                                                     <spanish>
                                                         <![CDATA[Hola]]>
@@ -627,7 +627,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>9</language>
+                                                    <language>5</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -642,7 +642,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Doctor_Say" id="6" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1038" y="682">
+                        <Box name="Doctor_Say" id="6" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1068" y="723">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -749,7 +749,7 @@ class MyClass(GeneratedClass):
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
 			"Greek" : "  ",
-			"English" : " I don\'t need one, but I\'ll tell my friends about you! ",
+			"English" : " You want to help people and make them feel better? You need to be super smart, and work on your sciences, and maybe a bit of math! It takes a lot of effort and attention to become one! Though I don\'t need a doctor myself! ",
 			"Spanish" : " Hola ",
 			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
@@ -789,7 +789,7 @@ class MyClass(GeneratedClass):
                                                         <![CDATA[]]>
 </greek>
                                                     <english>
-                                                        <![CDATA[I don't need one, but I'll tell my friends about you!]]>
+                                                        <![CDATA[You want to help people and make them feel better? You need to be super smart, and work on your sciences, and maybe a bit of math! It takes a lot of effort and attention to become one! Though I don't need a doctor myself!]]>
 </english>
                                                     <spanish>
                                                         <![CDATA[Hola]]>
@@ -836,7 +836,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>9</language>
+                                                    <language>5</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -851,7 +851,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Mechanic_Say" id="7" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="983" y="789">
+                        <Box name="Mechanic_Say" id="7" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="889" y="741">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -958,7 +958,7 @@ class MyClass(GeneratedClass):
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
 			"Greek" : "  ",
-			"English" : " My arms hurt, do you know why? ",
+			"English" : " You want to be a mechanic? You need to be able to get in and fix things by yourself, and be smart and good at engineering and math! ",
 			"Spanish" : " Hola ",
 			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
@@ -998,7 +998,7 @@ class MyClass(GeneratedClass):
                                                         <![CDATA[]]>
 </greek>
                                                     <english>
-                                                        <![CDATA[My arms hurt, do you know why?]]>
+                                                        <![CDATA[You want to be a mechanic? You need to be able to get in and fix things by yourself, and be smart and good at engineering and math!]]>
 </english>
                                                     <spanish>
                                                         <![CDATA[Hola]]>
@@ -1045,7 +1045,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>9</language>
+                                                    <language>5</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1060,7 +1060,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Scientist_Say" id="8" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="829" y="780">
+                        <Box name="Scientist_Say" id="8" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="728" y="741">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -1167,7 +1167,7 @@ class MyClass(GeneratedClass):
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
 			"Greek" : "  ",
-			"English" : " Show the world what you can do! ",
+			"English" : " You need to be super smart, and know all your science and math! Some like to focus and study specific sciences, like physics, and chemistry! And be sure to show the world what you can do! ",
 			"Spanish" : " Hola ",
 			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
@@ -1207,7 +1207,7 @@ class MyClass(GeneratedClass):
                                                         <![CDATA[]]>
 </greek>
                                                     <english>
-                                                        <![CDATA[Show the world what you can do!]]>
+                                                        <![CDATA[You need to be super smart, and know all your science and math! Some like to focus and study specific sciences, like physics, and chemistry! And be sure to show the world what you can do!]]>
 </english>
                                                     <spanish>
                                                         <![CDATA[Hola]]>
@@ -1254,7 +1254,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>8</language>
+                                                    <language>5</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1269,7 +1269,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Football_Say" id="9" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="689" y="784">
+                        <Box name="Football_Say" id="9" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="578" y="721">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -1376,7 +1376,7 @@ class MyClass(GeneratedClass):
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
 			"Greek" : "  ",
-			"English" : " Wait, which football? ",
+			"English" : " Football? You need to be strong and fast, and be quick on your feet! You need to train hard, and dedicate your time to your team! Be sure to work with your team well, too! ...Wait, which football? ",
 			"Spanish" : " Hola ",
 			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
@@ -1416,7 +1416,7 @@ class MyClass(GeneratedClass):
                                                         <![CDATA[]]>
 </greek>
                                                     <english>
-                                                        <![CDATA[Wait, which football?]]>
+                                                        <![CDATA[Football? You need to be strong and fast, and be quick on your feet! You need to train hard, and dedicate your time to your team! Be sure to work with your team well, too! ...Wait, which football?]]>
 </english>
                                                     <spanish>
                                                         <![CDATA[Hola]]>
@@ -1463,7 +1463,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>9</language>
+                                                    <language>5</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1478,7 +1478,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Rockstar_Say" id="10" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="644" y="648">
+                        <Box name="Rockstar_Say" id="10" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="479" y="612">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -1585,7 +1585,7 @@ class MyClass(GeneratedClass):
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
 			"Greek" : "  ",
-			"English" : " Go rock the world! ",
+			"English" : " You want to be a rockstar? That\'s a lot of performing in front of crowds! You can\'t be shy! You need to stand up strong and do your best! Oh, and don\'t forget to keep practising and practising! So go rock the world! ",
 			"Spanish" : " Hola ",
 			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
@@ -1625,7 +1625,7 @@ class MyClass(GeneratedClass):
                                                         <![CDATA[]]>
 </greek>
                                                     <english>
-                                                        <![CDATA[Go rock the world!]]>
+                                                        <![CDATA[You want to be a rockstar? That's a lot of performing in front of crowds! You can't be shy! You need to stand up strong and do your best! Oh, and don't forget to keep practising and practising! So go rock the world!]]>
 </english>
                                                     <spanish>
                                                         <![CDATA[Hola]]>
@@ -1672,7 +1672,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>9</language>
+                                                    <language>6</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1687,7 +1687,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Singer_Say" id="11" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="757" y="515">
+                        <Box name="Singer_Say" id="11" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="425" y="471">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -1794,7 +1794,7 @@ class MyClass(GeneratedClass):
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
 			"Greek" : "  ",
-			"English" : " Can you sing me a short song? ",
+			"English" : " You want to sing? You know that means large crowds, right? You need to stand up and show what you can do, don\'t be afraid to show your strengths! Sing your heart out, and keep practising and practising! Can you sing me a verse? ",
 			"Spanish" : " Hola ",
 			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
@@ -1834,7 +1834,7 @@ class MyClass(GeneratedClass):
                                                         <![CDATA[]]>
 </greek>
                                                     <english>
-                                                        <![CDATA[Can you sing me a short song?]]>
+                                                        <![CDATA[You want to sing? You know that means large crowds, right? You need to stand up and show what you can do, don't be afraid to show your strengths! Sing your heart out, and keep practising and practising! Can you sing me a verse?]]>
 </english>
                                                     <spanish>
                                                         <![CDATA[Hola]]>
@@ -1881,7 +1881,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>9</language>
+                                                    <language>6</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2090,7 +2090,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>8</language>
+                                                    <language>12</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2263,7 +2263,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Enable word spotting" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="If this option is not activated the robot will only understand exact expressions. If it is, he will spot the exact expressions even in the middle of a sentence.&#x0A;&#x0A;!!Warning!! This option is only available with the speech recognition module using Nuance (ie in Atom version of the robot)." id="10" />
                             <Resource name="Speech recognition" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="NotUnderstood_Say" id="13" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1083" y="261">
+                        <Box name="NotUnderstood_Say" id="13" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1106" y="128">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2458,7 +2458,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>8</language>
+                                                    <language>12</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2473,7 +2473,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="NotUnderstood_Wait" id="14" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1234" y="260">
+                        <Box name="NotUnderstood_Wait" id="14" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1257" y="127">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2513,7 +2513,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="7" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="SoundsCool_Say" id="15" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1382" y="257">
+                        <Box name="SoundsCool_Say" id="15" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1405" y="124">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2707,7 +2707,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>8</language>
+                                                    <language>12</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2722,7 +2722,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="NotUnderstood_Reset" id="16" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1522" y="273">
+                        <Box name="NotUnderstood_Reset" id="16" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1545" y="140">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2762,7 +2762,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="3" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Astronaut_Reset" id="17" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1193" y="365">
+                        <Box name="Astronaut_Reset" id="17" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1400" y="279">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2802,7 +2802,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="3" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Firefighter_Reset" id="18" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1207" y="473">
+                        <Box name="Firefighter_Reset" id="18" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1409" y="454">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2842,7 +2842,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="3" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Police_Reset" id="19" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1195" y="581">
+                        <Box name="Police_Reset" id="19" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1410" y="671">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2882,7 +2882,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="3" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Doctor_Reset" id="20" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1189" y="689">
+                        <Box name="Doctor_Reset" id="20" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1253" y="911">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2922,7 +2922,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="3" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Mechanic_Reset" id="21" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="1132" y="803">
+                        <Box name="Mechanic_Reset" id="21" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="972" y="999">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2962,7 +2962,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="6" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Scientist_Reset" id="22" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="902" y="884">
+                        <Box name="Scientist_Reset" id="22" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="711" y="1012">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -3002,7 +3002,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="3" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Football_Reset" id="23" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="750" y="893">
+                        <Box name="Football_Reset" id="23" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="388" y="889">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -3042,7 +3042,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="5" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Rockstar_Reset" id="24" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="785" y="664">
+                        <Box name="Rockstar_Reset" id="24" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="278" y="702">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -3082,7 +3082,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="3" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Singer_Reset" id="25" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="896" y="529">
+                        <Box name="Singer_Reset" id="25" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="219" y="531">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
