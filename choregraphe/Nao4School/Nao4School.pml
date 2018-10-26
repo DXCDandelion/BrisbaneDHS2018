@@ -20,6 +20,8 @@
         <BehaviorDescription name="behavior" src="simon_says/didnt say" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="simon_says/game over" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="simon_says/without" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="numberguessinggame/behavior_1" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="storytime" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="ExampleDialog" src="safety/ExampleDialog/ExampleDialog.dlg" />
@@ -43,6 +45,9 @@
         <File name="" src="simon_says/.metadata" />
         <File name="choice_sentences" src="simon_says/_simon says_/Aldebaran/choice_sentences.xml" />
         <File name="choice_sentences" src="simon_says/without/Aldebaran/choice_sentences.xml" />
+        <File name="BahBow" src="numberguessinggame/BahBow.mp3" />
+        <File name="Crowd Cheering - sound effect" src="numberguessinggame/Crowd Cheering - sound effect.mp3" />
+        <File name="YouTube" src="numberguessinggame/YouTube.mp3" />
     </Resources>
     <Topics>
         <Topic name="ExampleDialog_enu" src="safety/ExampleDialog/ExampleDialog_enu.top" topicName="ExampleDialog" language="en_US" />
