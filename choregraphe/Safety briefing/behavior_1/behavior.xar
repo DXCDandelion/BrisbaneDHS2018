@@ -14,7 +14,7 @@
         <Timeline enable="0">
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
-                    <Diagram scale="84.0896">
+                    <Diagram>
                         <Box name="Speech Reco." id="1" localization="8" tooltip="Recognize a word from a list of words set in the box parameters.&#x0A;&#x0A;V1.1.0&#x0A;" x="135" y="70">
                             <bitmap>media/images/box/interaction/ear.png</bitmap>
                             <script language="4">
@@ -1089,12 +1089,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("use a tissue to contain it")]]>
+		self.onStopped("use a tissue to avoid the spread of germs")]]>
 </content>
                                                 </script>
                                                 <pluginContent>
                                                     <text>
-                                                        <![CDATA[use a tissue to contain it]]>
+                                                        <![CDATA[use a tissue to avoid the spread of germs]]>
 </text>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1911,7 +1911,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="1" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently delaying at least one signal and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Repeat?" id="13" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="94" y="566">
+                        <Box name="Repeat?" id="13" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="88" y="551">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2029,7 +2029,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Delay 1s" id="15" localization="8" tooltip="Wait a moment before triggering the output. &#x0A;Can be stopped anytime. &#x0A;Multiple inputs will trigger multiple outputs." x="100" y="416">
+                        <Box name="Delay 1s" id="15" localization="8" tooltip="Wait a moment before triggering the output. &#x0A;Can be stopped anytime. &#x0A;Multiple inputs will trigger multiple outputs." x="87" y="407">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2949,7 +2949,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Stay safe" id="19" localization="8" tooltip="Bow" x="830" y="433">
+                        <Box name="Stay safe" id="19" localization="8" tooltip="Bow" x="843" y="315">
                             <bitmap>media/images/box/movement/move.png</bitmap>
                             <script language="4">
                                 <content>
@@ -3343,7 +3343,7 @@ class MyClass(GeneratedClass):
                                 </ActuatorList>
                             </Timeline>
                         </Box>
-                        <Box name="END POSE" id="20" localization="8" tooltip="Add to end of all sequences 1_10&#x0A;" x="1051" y="423">
+                        <Box name="END POSE" id="20" localization="8" tooltip="Add to end of all sequences 1_10&#x0A;" x="989" y="300">
                             <bitmap>media/images/box/movement/move.png</bitmap>
                             <script language="4">
                                 <content>
@@ -4066,15 +4066,12 @@ class MyClass(GeneratedClass):
                         <Link inputowner="7" indexofinput="2" outputowner="2" indexofoutput="8" />
                         <Link inputowner="8" indexofinput="2" outputowner="2" indexofoutput="9" />
                         <Link inputowner="9" indexofinput="2" outputowner="2" indexofoutput="10" />
-                        <Link inputowner="1" indexofinput="3" outputowner="1" indexofoutput="5" />
                         <Link inputowner="14" indexofinput="2" outputowner="8" indexofoutput="4" />
                         <Link inputowner="14" indexofinput="2" outputowner="4" indexofoutput="4" />
                         <Link inputowner="14" indexofinput="2" outputowner="9" indexofoutput="4" />
                         <Link inputowner="14" indexofinput="2" outputowner="5" indexofoutput="4" />
-                        <Link inputowner="15" indexofinput="2" outputowner="1" indexofoutput="6" />
                         <Link inputowner="13" indexofinput="2" outputowner="15" indexofoutput="4" />
                         <Link inputowner="1" indexofinput="2" outputowner="14" indexofoutput="4" />
-                        <Link inputowner="1" indexofinput="2" outputowner="13" indexofoutput="4" />
                         <Link inputowner="14" indexofinput="2" outputowner="16" indexofoutput="4" />
                         <Link inputowner="14" indexofinput="2" outputowner="17" indexofoutput="4" />
                         <Link inputowner="18" indexofinput="2" outputowner="2" indexofoutput="15" />
@@ -4093,6 +4090,9 @@ class MyClass(GeneratedClass):
                         <Link inputowner="18" indexofinput="2" outputowner="2" indexofoutput="14" />
                         <Link inputowner="11" indexofinput="2" outputowner="2" indexofoutput="4" />
                         <Link inputowner="14" indexofinput="2" outputowner="11" indexofoutput="4" />
+                        <Link inputowner="1" indexofinput="2" outputowner="13" indexofoutput="4" />
+                        <Link inputowner="1" indexofinput="3" outputowner="1" indexofoutput="5" />
+                        <Link inputowner="15" indexofinput="2" outputowner="1" indexofoutput="6" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
