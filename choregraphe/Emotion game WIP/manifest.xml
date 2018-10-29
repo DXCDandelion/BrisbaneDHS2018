@@ -10,7 +10,15 @@
   <language>en_US</language>
  </descriptionLanguages>
  <contents>
-  <behaviorContent path="behavior_1">
+  <behaviorContent path="Emotion_base">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="Emotion_win">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="Emotion_lose">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>

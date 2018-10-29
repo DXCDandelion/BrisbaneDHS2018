@@ -872,7 +872,7 @@ class MyClass(GeneratedClass):
                             <Output name="correct" type="1" type_size="1" nature="2" inner="0" tooltip="" id="4" />
                             <Output name="wrong" type="1" type_size="1" nature="2" inner="0" tooltip="" id="5" />
                         </Box>
-                        <Box name="Wipe Forehead" id="17" localization="8" tooltip="This box makes the robot wipe his forehead." x="1845" y="643">
+                        <Box name="Wipe Forehead" id="17" localization="8" tooltip="This box makes the robot wipe his forehead." x="1819" y="617">
                             <bitmap>media/images/box/movement/move.png</bitmap>
                             <script language="4">
                                 <content>
