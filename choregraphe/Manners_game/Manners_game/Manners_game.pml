@@ -2,12 +2,10 @@
 <Package name="Manners_game" format_version="4">
     <Manifest src="manifest.xml" />
     <BehaviorDescriptions>
-        <BehaviorDescription name="behavior" src="Manners_Game_Mode" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="behavior_1" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources />
     <Topics />
-    <IgnoredPaths>
-        <Path src="Manners_Game_Mode/Manners_game.pml" />
-    </IgnoredPaths>
+    <IgnoredPaths />
 </Package>
