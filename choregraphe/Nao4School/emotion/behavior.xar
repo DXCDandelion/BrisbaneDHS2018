@@ -2987,6 +2987,7 @@ class MyClass(GeneratedClass):
                         <Link inputowner="6" indexofinput="2" outputowner="28" indexofoutput="4" />
                         <Link inputowner="29" indexofinput="2" outputowner="6" indexofoutput="7" />
                         <Link inputowner="28" indexofinput="2" outputowner="29" indexofoutput="4" />
+                        <Link inputowner="2" indexofinput="2" outputowner="11" indexofoutput="4" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
