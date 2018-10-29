@@ -3060,6 +3060,7 @@ class MyClass(GeneratedClass):
                         <Link inputowner="12" indexofinput="2" outputowner="10" indexofoutput="4" />
                         <Link inputowner="6" indexofinput="2" outputowner="19" indexofoutput="4" />
                         <Link inputowner="31" indexofinput="3" outputowner="6" indexofoutput="6" />
+                        <Link inputowner="6" indexofinput="2" outputowner="9" indexofoutput="4" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
