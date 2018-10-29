@@ -3146,7 +3146,7 @@ class MyClass(GeneratedClass):
                             <Input name="signal2" type="1" type_size="1" nature="1" inner="0" tooltip="Second signal to wait." id="3" />
                             <Output name="signalsReceived" type="1" type_size="1" nature="2" inner="0" tooltip="Signal sent when both inputs have been stimulated." id="4" />
                         </Box>
-                        <Box name="Python Script" id="53" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="777" y="382">
+                        <Box name="Python Script" id="53" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="742" y="359">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
@@ -3177,7 +3177,7 @@ class MyClass(GeneratedClass):
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                         </Box>
-                        <Box name="WakeUp" id="55" localization="0" tooltip="Call a Wake Up process.&#x0A;Stiff all joints and apply stand Init posture if the robot is Stand" x="1182" y="379">
+                        <Box name="WakeUp" id="55" localization="0" tooltip="Call a Wake Up process.&#x0A;Stiff all joints and apply stand Init posture if the robot is Stand" x="990" y="374">
                             <bitmap>media/images/box/movement/stiffness.png</bitmap>
                             <script language="4">
                                 <content>
@@ -3382,7 +3382,7 @@ class MyClass(GeneratedClass):
                             <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Starts the music." id="2" />
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Stops the music." id="3" />
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished or stopped." id="4" />
-                            <Parameter name="File name" inherits_from_parent="0" content_type="4" value="" default_value="" tooltip="Name of the file you want to play.&#x0A;&#x0A;Note: You can click on the folder icon to browse the project content or import&#x0A;new files to the project." id="5" />
+                            <Parameter name="File name" inherits_from_parent="0" content_type="4" value="/../Lion Roar-SoundBible.com-718441804.wav" default_value="" tooltip="Name of the file you want to play.&#x0A;&#x0A;Note: You can click on the folder icon to browse the project content or import&#x0A;new files to the project." id="5" />
                             <Parameter name="Begin position (s)" inherits_from_parent="0" content_type="2" value="0" default_value="0" min="0" max="600" tooltip="Position in seconds where the playing must start." id="6" />
                             <Parameter name="Volume (%)" inherits_from_parent="0" content_type="1" value="100" default_value="100" min="0" max="100" tooltip="Volume the file is played with." id="7" />
                             <Parameter name="Balance L/R" inherits_from_parent="0" content_type="2" value="0" default_value="0" min="-1" max="1" tooltip="Value which determines if the sound is played more on the robot&apos;s left or right.&#x0A;You can particularly set it to:&#x0A;- -1 to play only on the left loudspeaker.&#x0A;- 0 to play on both loudspeakers.&#x0A;- 1 to play only on the right loudspeaker." id="8" />
@@ -3617,22 +3617,22 @@ class MyClass(GeneratedClass):
                         <Link inputowner="55" indexofinput="2" outputowner="53" indexofoutput="4" />
                         <Link inputowner="0" indexofinput="4" outputowner="54" indexofoutput="4" />
                         <Link inputowner="5" indexofinput="2" outputowner="56" indexofoutput="3" />
-                        <Link inputowner="56" indexofinput="2" outputowner="0" indexofoutput="2" />
                         <Link inputowner="23" indexofinput="2" outputowner="57" indexofoutput="3" />
-                        <Link inputowner="57" indexofinput="2" outputowner="0" indexofoutput="2" />
                         <Link inputowner="1" indexofinput="2" outputowner="26" indexofoutput="4" />
                         <Link inputowner="1" indexofinput="3" outputowner="2" indexofoutput="4" />
                         <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="4" />
                         <Link inputowner="3" indexofinput="3" outputowner="55" indexofoutput="4" />
                         <Link inputowner="48" indexofinput="2" outputowner="3" indexofoutput="4" />
                         <Link inputowner="47" indexofinput="2" outputowner="48" indexofoutput="4" />
-                        <Link inputowner="53" indexofinput="2" outputowner="0" indexofoutput="2" />
                         <Link inputowner="54" indexofinput="2" outputowner="39" indexofoutput="4" />
                         <Link inputowner="58" indexofinput="3" outputowner="45" indexofoutput="4" />
                         <Link inputowner="45" indexofinput="2" outputowner="46" indexofoutput="4" />
                         <Link inputowner="46" indexofinput="2" outputowner="28" indexofoutput="7" />
                         <Link inputowner="58" indexofinput="2" outputowner="32" indexofoutput="4" />
                         <Link inputowner="7" indexofinput="2" outputowner="58" indexofoutput="4" />
+                        <Link inputowner="57" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Link inputowner="56" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Link inputowner="53" indexofinput="2" outputowner="0" indexofoutput="2" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
