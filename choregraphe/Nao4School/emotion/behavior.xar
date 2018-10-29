@@ -360,7 +360,7 @@ class MyClass(GeneratedClass):
                             <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
                             <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
                         </Box>
-                        <Box name="NAOMark" id="6" localization="8" tooltip="Detect NAOMark and return its ID number." x="976" y="334">
+                        <Box name="NAOMark" id="6" localization="8" tooltip="Detect NAOMark and return its ID number." x="1072" y="332">
                             <bitmap>media/images/box/interaction/uramark.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2721,7 +2721,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Say (1)" id="29" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="956" y="574">
+                        <Box name="Say (1)" id="29" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="910" y="586">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2888,7 +2888,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="1" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently delaying at least one signal and cancelled, output will be stimulated." id="6" />
                         </Box>
-                        <Box name="Timeline" id="31" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="839" y="396">
+                        <Box name="Timeline" id="31" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="839" y="398">
                             <bitmap>media/images/box/movement/move.png</bitmap>
                             <script language="4">
                                 <content>
@@ -3061,6 +3061,7 @@ class MyClass(GeneratedClass):
                         <Link inputowner="6" indexofinput="2" outputowner="19" indexofoutput="4" />
                         <Link inputowner="31" indexofinput="3" outputowner="6" indexofoutput="6" />
                         <Link inputowner="6" indexofinput="2" outputowner="9" indexofoutput="4" />
+                        <Link inputowner="6" indexofinput="2" outputowner="29" indexofoutput="4" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
