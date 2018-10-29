@@ -801,11 +801,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>7</language>
-=======
-                                                    <language>6</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1136,11 +1132,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>13</language>
-=======
-                                                    <language>12</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1617,11 +1609,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>13</language>
-=======
-                                                    <language>12</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1875,11 +1863,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>7</language>
-=======
-                                                    <language>6</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2088,11 +2072,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>7</language>
-=======
-                                                    <language>6</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2528,11 +2508,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>12</language>
-=======
-                                                    <language>11</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2947,11 +2923,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>13</language>
-=======
-                                                    <language>12</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -3432,11 +3404,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>13</language>
-=======
-                                                    <language>12</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -3851,11 +3819,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>13</language>
-=======
-                                                    <language>12</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -4314,11 +4278,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>13</language>
-=======
-                                                    <language>12</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -4733,11 +4693,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>13</language>
-=======
-                                                    <language>12</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -5218,11 +5174,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>13</language>
-=======
-                                                    <language>12</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -5637,11 +5589,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>13</language>
-=======
-                                                    <language>12</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -5872,11 +5820,7 @@ class MyClass(GeneratedClass):
                             <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
                             <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
                         </Box>
-<<<<<<< HEAD
                         <Box name="Say Text (6)" id="92" localization="8" tooltip="Say the text received on its input." x="3056" y="2085">
-=======
-                        <Box name="Say Text (6)" id="92" localization="8" tooltip="Say the text received on its input." x="1964" y="2128">
->>>>>>> 4-animal-guessing-game
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -6126,11 +6070,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>13</language>
-=======
-                                                    <language>12</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -6545,11 +6485,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-<<<<<<< HEAD
                                                     <language>13</language>
-=======
-                                                    <language>12</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -6564,11 +6500,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-<<<<<<< HEAD
                         <Box name="Switch Case (5)" id="97" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="3464" y="2103">
-=======
-                        <Box name="Switch Case (5)" id="97" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="2393" y="2156">
->>>>>>> 4-animal-guessing-game
                             <bitmap>media/images/box/interaction/choice.png</bitmap>
                             <script language="4">
                                 <content>
@@ -6915,11 +6847,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="80" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-<<<<<<< HEAD
                         <Box name="Speech Reco. (7)" id="105" localization="8" tooltip="Recognize a word from a list of words set in the box parameters.&#x0A;&#x0A;V1.1.0&#x0A;" x="597" y="396">
-=======
-                        <Box name="Speech Reco. (7)" id="105" localization="8" tooltip="Recognize a word from a list of words set in the box parameters.&#x0A;&#x0A;V1.1.0&#x0A;" x="346" y="344">
->>>>>>> 4-animal-guessing-game
                             <bitmap>media/images/box/interaction/ear.png</bitmap>
                             <script language="4">
                                 <content>
@@ -7004,11 +6932,7 @@ class MyClass(GeneratedClass):
                             <Parameter name="Enable word spotting" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="If this option is not activated the robot will only understand exact expressions. If it is, he will spot the exact expressions even in the middle of a sentence.&#x0A;&#x0A;!!Warning!! This option is only available with the speech recognition module using Nuance (ie in Atom version of the robot)." id="10" />
                             <Resource name="Speech recognition" type="Lock" timeout="0" />
                         </Box>
-<<<<<<< HEAD
                         <Box name="Switch Case (7)" id="106" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="771" y="399">
-=======
-                        <Box name="Switch Case (7)" id="106" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="494" y="306">
->>>>>>> 4-animal-guessing-game
                             <bitmap>media/images/box/interaction/choice.png</bitmap>
                             <script language="4">
                                 <content>
@@ -7053,11 +6977,7 @@ class MyClass(GeneratedClass):
                             <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
                             <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
                         </Box>
-<<<<<<< HEAD
                         <Box name="Text Edit (26)" id="107" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="219" y="268">
-=======
-                        <Box name="Text Edit (26)" id="107" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="59" y="219">
->>>>>>> 4-animal-guessing-game
                             <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
                             <script language="4">
                                 <content>
@@ -7079,11 +6999,7 @@ class MyClass(GeneratedClass):
                             <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
                             <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
                         </Box>
-<<<<<<< HEAD
                         <Box name="Say Text" id="108" localization="8" tooltip="Say the text received on its input." x="469" y="411">
-=======
-                        <Box name="Say Text" id="108" localization="8" tooltip="Say the text received on its input." x="194" y="362">
->>>>>>> 4-animal-guessing-game
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -7406,57 +7322,7 @@ class MyClass(GeneratedClass):
                                                 <pluginContent>
                                                     <text>
                                                         <![CDATA[Here comes your next animal, get ready!]]>
-<<<<<<< HEAD
 </text>
-=======
-</english>
-                                                    <spanish>
-                                                        <![CDATA[Hola]]>
-</spanish>
-                                                    <finnish>
-                                                        <![CDATA[Hei]]>
-</finnish>
-                                                    <french>
-                                                        <![CDATA[Bonjour]]>
-</french>
-                                                    <italian>
-                                                        <![CDATA[Ciao]]>
-</italian>
-                                                    <japanese>
-                                                        <![CDATA[こんにちは]]>
-</japanese>
-                                                    <korean>
-                                                        <![CDATA[안녕하세요]]>
-</korean>
-                                                    <dutch>
-                                                        <![CDATA[Hallo]]>
-</dutch>
-                                                    <norwegian>
-                                                        <![CDATA[]]>
-</norwegian>
-                                                    <polish>
-                                                        <![CDATA[Cześć]]>
-</polish>
-                                                    <brazilian>
-                                                        <![CDATA[Olá]]>
-</brazilian>
-                                                    <portuguese>
-                                                        <![CDATA[Olá]]>
-</portuguese>
-                                                    <russian>
-                                                        <![CDATA[Привет]]>
-</russian>
-                                                    <swedish>
-                                                        <![CDATA[Hallå]]>
-</swedish>
-                                                    <turkish>
-                                                        <![CDATA[Merhaba]]>
-</turkish>
-                                                    <chinese>
-                                                        <![CDATA[]]>
-</chinese>
-                                                    <language>6</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
@@ -7804,115 +7670,16 @@ class MyClass(GeneratedClass):
                                                         <![CDATA[# /!\ Generated content. Do not edit!
 class MyClass(GeneratedClass):
 	def __init__(self):
-<<<<<<< HEAD
 		GeneratedClass.__init__(self)
-=======
-		try: # disable autoBind
-			GeneratedClass.__init__(self, False)
-		except TypeError: # if NAOqi < 1.14
-			GeneratedClass.__init__( self )
-
-		self.tts = ALProxy("ALTextToSpeech")
-		self.sentences = {
-			"Arabic" : "  ",
-			"Czech" : " Ahoj ",
-			"Danish" : " Hej ",
-			"German" : " Hallo ",
-			"Greek" : "  ",
-			"English" : " OK lets begin the game ",
-			"Spanish" : " Hola ",
-			"Finnish" : " Hei ",
-			"French" : " Bonjour ",
-			"Italian" : " Ciao ",
-			"Japanese" : " こんにちは ",
-			"Korean" : " 안녕하세요 ",
-			"Dutch" : " Hallo ",
-			"Norwegian" : "  ",
-			"Polish" : " Cześć ",
-			"Brazilian" : " Olá ",
-			"Portuguese" : " Olá ",
-			"Russian" : " Привет ",
-			"Swedish" : " Hallå ",
-			"Turkish" : " Merhaba ",
-			"Chinese" : "  "
-		}
->>>>>>> 4-animal-guessing-game
 
 	def onInput_onStart(self):
 		self.onStopped("OK lets begin the game")]]>
 </content>
                                                 </script>
                                                 <pluginContent>
-<<<<<<< HEAD
                                                     <text>
                                                         <![CDATA[OK lets begin the game]]>
 </text>
-=======
-                                                    <arabic>
-                                                        <![CDATA[]]>
-</arabic>
-                                                    <czech>
-                                                        <![CDATA[Ahoj]]>
-</czech>
-                                                    <danish>
-                                                        <![CDATA[Hej]]>
-</danish>
-                                                    <german>
-                                                        <![CDATA[Hallo]]>
-</german>
-                                                    <greek>
-                                                        <![CDATA[]]>
-</greek>
-                                                    <english>
-                                                        <![CDATA[OK lets begin the game]]>
-</english>
-                                                    <spanish>
-                                                        <![CDATA[Hola]]>
-</spanish>
-                                                    <finnish>
-                                                        <![CDATA[Hei]]>
-</finnish>
-                                                    <french>
-                                                        <![CDATA[Bonjour]]>
-</french>
-                                                    <italian>
-                                                        <![CDATA[Ciao]]>
-</italian>
-                                                    <japanese>
-                                                        <![CDATA[こんにちは]]>
-</japanese>
-                                                    <korean>
-                                                        <![CDATA[안녕하세요]]>
-</korean>
-                                                    <dutch>
-                                                        <![CDATA[Hallo]]>
-</dutch>
-                                                    <norwegian>
-                                                        <![CDATA[]]>
-</norwegian>
-                                                    <polish>
-                                                        <![CDATA[Cześć]]>
-</polish>
-                                                    <brazilian>
-                                                        <![CDATA[Olá]]>
-</brazilian>
-                                                    <portuguese>
-                                                        <![CDATA[Olá]]>
-</portuguese>
-                                                    <russian>
-                                                        <![CDATA[Привет]]>
-</russian>
-                                                    <swedish>
-                                                        <![CDATA[Hallå]]>
-</swedish>
-                                                    <turkish>
-                                                        <![CDATA[Merhaba]]>
-</turkish>
-                                                    <chinese>
-                                                        <![CDATA[]]>
-</chinese>
-                                                    <language>6</language>
->>>>>>> 4-animal-guessing-game
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
