@@ -244,7 +244,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onStart(self, p):
         self.bIsRunning = True
-        situationMap = {1:"Your parents have taken you out to eat in a restaurant", 2:"your food has arrived in a restaurant", 3:"Somebody is talking to you", 4:"Somebody is talking on the phone but you need to talk to them.", 5:"Surprised", 6:"resting", 7:"bored", 8:"Someone is using something you want to use", 9:"Place 1", 10:"place 2"}
+        situationMap = {1:"Your parents have taken you out to eat in a restaurant", 2:"your food has arrived in a restaurant", 3:"Somebody is talking to you", 4:"Somebody is talking on the phone but you need to talk to them", 5:"You don't like the food that you have been given", 6:"You were playing a game but you didn't win", 7:"You go to tuckshop, but there is a line of people waiting", 8:"Someone is using something you want to use", 9:"Somebody says hello to you", 10:"Somebody says goodbye to you"}
         try:
             sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
             sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
