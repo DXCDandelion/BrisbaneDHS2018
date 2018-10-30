@@ -6,9 +6,9 @@
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>
-        <File name="quiz" src="quiz.csv" />
         <File name="choice_sentences" src="behavior_1/Aldebaran/choice_sentences.xml" />
         <File name="questions" src="questions.csv" />
+        <File name="quiz" src="quiz.csv" />
     </Resources>
     <Topics />
     <IgnoredPaths />
