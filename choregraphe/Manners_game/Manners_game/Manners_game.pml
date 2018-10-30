@@ -4,7 +4,7 @@
     <BehaviorDescriptions>
         <BehaviorDescription name="behavior" src="Manners_Base" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="Manners_win" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="Manners_End" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="Manners_speech" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources />
