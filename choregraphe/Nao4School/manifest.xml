@@ -84,12 +84,13 @@
   </behaviorContent>
   <behaviorContent path="numberguessinggame/behavior_1">
    <nature>interactive</nature>
-   <triggerSentences/>
-   <loadingResponses/>
-   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="storytime">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="Trivia Quest/behavior_1">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>

@@ -22,6 +22,7 @@
         <BehaviorDescription name="behavior" src="simon_says/without" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="numberguessinggame/behavior_1" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="storytime" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="Trivia Quest/behavior_1" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="ExampleDialog" src="safety/ExampleDialog/ExampleDialog.dlg" />
@@ -48,6 +49,8 @@
         <File name="BahBow" src="numberguessinggame/BahBow.mp3" />
         <File name="Crowd Cheering - sound effect" src="numberguessinggame/Crowd Cheering - sound effect.mp3" />
         <File name="YouTube" src="numberguessinggame/YouTube.mp3" />
+        <File name="" src="Trivia Quest/.metadata" />
+        <File name="BahBow" src="Trivia Quest/BahBow.mp3" />
     </Resources>
     <Topics>
         <Topic name="ExampleDialog_enu" src="safety/ExampleDialog/ExampleDialog_enu.top" topicName="ExampleDialog" language="en_US" />
